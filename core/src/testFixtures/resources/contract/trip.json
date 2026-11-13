@@ -1,0 +1,15 @@
+{
+  "trip_id": "6f1e6a9c-52f7-4f3e-9a54-0f0c2c9c1a11",
+  "rev": 3,
+  "started_at": "2026-11-20T08:15:00+09:00",
+  "ended_at": null,
+  "drive_sec": 7260,
+  "rest_sec": 900,
+  "segments": [
+    { "type": "drive", "start": "2026-11-20T08:15:00+09:00", "end": "2026-11-20T10:16:00+09:00" },
+    { "type": "rest", "start": "2026-11-20T10:16:00+09:00", "end": "2026-11-20T10:31:00+09:00" }
+  ],
+  "stop_advised_count": 1,
+  "declined_count": 0,
+  "rest_completed_count": 1
+}

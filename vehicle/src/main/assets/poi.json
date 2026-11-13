@@ -1,0 +1,4447 @@
+{
+ "schemaVersion": 1,
+ "notice": "데모용 데이터. 실제 출시 전 원본으로 갱신 필요. 출처는 docs/poi-sources.md",
+ "sources": [
+  {
+   "name": "전국졸음쉼터표준데이터(한국도로공사)",
+   "url": "https://www.data.go.kr/data/15028203/standard.do",
+   "dataDate": "2026-02-25",
+   "count": 253
+  },
+  {
+   "name": "전국휴게소정보표준데이터(한국도로공사)",
+   "url": "https://www.data.go.kr/data/15025446/standard.do",
+   "dataDate": "2026-09-17",
+   "count": 215
+  }
+ ],
+ "places": [
+  {
+   "id": "ds-020d16a16bd3",
+   "name": "이천졸음쉼터(인천방향)",
+   "latitude": 37.24279698,
+   "longitude": 127.4670635,
+   "kind": "DROWSY_SHELTER",
+   "direction": "인천방향",
+   "address": "경기도 이천시 고담동 산78-4"
+  },
+  {
+   "id": "ds-02f22c61d772",
+   "name": "진주졸음쉼터(통영방향)",
+   "latitude": 35.19697858,
+   "longitude": 128.0295319,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경상남도 진주시 판문동 983"
+  },
+  {
+   "id": "ds-053db36a6aa0",
+   "name": "완주졸음쉼터(익산방향)",
+   "latitude": 35.92802974,
+   "longitude": 127.1011742,
+   "kind": "DROWSY_SHELTER",
+   "direction": "익산방향",
+   "address": "전북특별자치도 완주군 삼례읍 석전리 80-16"
+  },
+  {
+   "id": "ds-05692acdf3da",
+   "name": "마이산졸음쉼터(장수방향)",
+   "latitude": 35.76763628,
+   "longitude": 127.3629332,
+   "kind": "DROWSY_SHELTER",
+   "direction": "장수방향",
+   "address": "전북특별자치도 진안군 진안읍 연장리 1568-10"
+  },
+  {
+   "id": "ds-08e0d3a898ec",
+   "name": "강진졸음쉼터(순천방향)",
+   "latitude": 34.68656192,
+   "longitude": 126.7740237,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "전라남도 강진군 작천면 평기리 산79-9"
+  },
+  {
+   "id": "ds-091723582345",
+   "name": "용인졸음쉼터(강릉방향)",
+   "latitude": 37.28861576,
+   "longitude": 127.1387267,
+   "kind": "DROWSY_SHELTER",
+   "direction": "강릉방향",
+   "address": "경기도 용인시 기흥구 청덕동 390-7"
+  },
+  {
+   "id": "ds-092378873e45",
+   "name": "고성졸음쉼터(통영방향)",
+   "latitude": 34.98175411,
+   "longitude": 128.3735157,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경상남도 고성군 거류면 송산리 산98"
+  },
+  {
+   "id": "ds-09cf9b85226e",
+   "name": "화산졸음쉼터(포항방향)",
+   "latitude": 36.01706571,
+   "longitude": 128.8854996,
+   "kind": "DROWSY_SHELTER",
+   "direction": "포항방향",
+   "address": "경상북도 영천시 화산면 암기리 613-1"
+  },
+  {
+   "id": "ds-0a937f615bb9",
+   "name": "남상졸음쉼터(광주광역시방향)",
+   "latitude": 35.61123398,
+   "longitude": 127.881546,
+   "kind": "DROWSY_SHELTER",
+   "direction": "광주광역시방향",
+   "address": "경상남도 거창군 남상면 오계리 881"
+  },
+  {
+   "id": "ds-0c2ebc75ad42",
+   "name": "모가졸음쉼터(하남방향)",
+   "latitude": 37.19685569,
+   "longitude": 127.4434293,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경기도 이천시 모가면 신갈리 25-11"
+  },
+  {
+   "id": "ds-0d90ab5c79d0",
+   "name": "문경졸음쉼터(창원방향)",
+   "latitude": 36.74701103,
+   "longitude": 128.0611382,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "경상북도 문경시 문경읍 각서리 18-3"
+  },
+  {
+   "id": "ds-0edd5d33970e",
+   "name": "가남졸음쉼터(창원방향)",
+   "latitude": 37.1690741,
+   "longitude": 127.6265365,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "경기도 여주시 가남읍 삼승리 143-1"
+  },
+  {
+   "id": "ds-0f4e15b7f003",
+   "name": "금서졸음쉼터(하남방향)",
+   "latitude": 35.43837913,
+   "longitude": 127.8547834,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경상남도 산청군 금서면 특리 370"
+  },
+  {
+   "id": "ds-1070dcb0d47a",
+   "name": "부여졸음쉼터(공주방향)",
+   "latitude": 36.31945138,
+   "longitude": 126.8743153,
+   "kind": "DROWSY_SHELTER",
+   "direction": "공주방향",
+   "address": "충청남도 부여군 규암면 신성리 420-4"
+  },
+  {
+   "id": "ds-11cb0ceb7a3a",
+   "name": "영광졸음쉼터(서울방향)",
+   "latitude": 35.24945575,
+   "longitude": 126.5189718,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "전라남도 영광군 영광읍 학정리 381"
+  },
+  {
+   "id": "ds-124edd389c22",
+   "name": "지수졸음쉼터(부산방향)",
+   "latitude": 35.20799567,
+   "longitude": 128.2582372,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상남도 진주시 지수면 금곡리 산55-1"
+  },
+  {
+   "id": "ds-129aaf6c8320",
+   "name": "삽교졸음쉼터(강릉방향)",
+   "latitude": 37.52216459,
+   "longitude": 128.2743265,
+   "kind": "DROWSY_SHELTER",
+   "direction": "강릉방향",
+   "address": "강원특별자치도 횡성군 둔내면 삽교리 1117-6"
+  },
+  {
+   "id": "ds-13419802d232",
+   "name": "명곡졸음쉼터(부산방향)",
+   "latitude": 36.12565427,
+   "longitude": 128.5410969,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상북도 구미시 장천면 명곡리 530"
+  },
+  {
+   "id": "ds-135aa099b1ed",
+   "name": "북안졸음쉼터(부산방향)",
+   "latitude": 35.924622,
+   "longitude": 128.9980117,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상북도 영천시 북안면 반정리 289"
+  },
+  {
+   "id": "ds-13b1fb57d7cb",
+   "name": "금성졸음쉼터(평택방향)",
+   "latitude": 37.07816706,
+   "longitude": 128.1504306,
+   "kind": "DROWSY_SHELTER",
+   "direction": "평택방향",
+   "address": "충청북도 제천시 금성면 사곡리 373-1"
+  },
+  {
+   "id": "ds-14d49fad068c",
+   "name": "오산졸음쉼터(부산방향)",
+   "latitude": 37.15670802,
+   "longitude": 127.0871649,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경기도 오산시 부산동 437-4"
+  },
+  {
+   "id": "ds-168dd42b0538",
+   "name": "일죽졸음쉼터(하남방향)",
+   "latitude": 37.08423849,
+   "longitude": 127.4570094,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경기도 안성시 일죽면 월정리 755"
+  },
+  {
+   "id": "ds-182481bb2b9d",
+   "name": "죽령졸음쉼터(부산방향)",
+   "latitude": 36.91350622,
+   "longitude": 128.3977005,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "충청북도 단양군 대강면 용부원리 301-4"
+  },
+  {
+   "id": "ds-1b1204de8836",
+   "name": "소흘졸음쉼터(구리방향)",
+   "latitude": 37.8279829342,
+   "longitude": 127.159193,
+   "kind": "DROWSY_SHELTER",
+   "direction": "구리방향",
+   "address": "경기도 포천시 소흘읍 이가팔리 685"
+  },
+  {
+   "id": "ds-1c922468167d",
+   "name": "금곡졸음쉼터(통영방향)",
+   "latitude": 35.09473045,
+   "longitude": 128.1642909,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경상남도 사천시 사천읍 금곡리 31"
+  },
+  {
+   "id": "ds-1d2c0b32e5eb",
+   "name": "검단졸음쉼터(서울방향)",
+   "latitude": 35.91573946,
+   "longitude": 128.6144513,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "대구광역시 북구 검단동 376-12"
+  },
+  {
+   "id": "ds-1d4b380b0e5d",
+   "name": "수동졸음쉼터(통영방향)",
+   "latitude": 35.51724618,
+   "longitude": 127.7962334,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경상남도 함양군 수동면 화산리 858-28"
+  },
+  {
+   "id": "ds-1e60c18e8666",
+   "name": "원곡졸음쉼터(서울방향)",
+   "latitude": 37.00111198,
+   "longitude": 127.1519713,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경기도 평택시 용이동 419-15"
+  },
+  {
+   "id": "ds-1ed6bd15913f",
+   "name": "시흥졸음쉼터(판교방향)",
+   "latitude": 37.45048055,
+   "longitude": 126.8031881,
+   "kind": "DROWSY_SHELTER",
+   "direction": "판교방향",
+   "address": "경기도 시흥시 계수동 460"
+  },
+  {
+   "id": "ds-1faa1f52ea0f",
+   "name": "봉무졸음쉼터(달서방향)",
+   "latitude": 35.93259366,
+   "longitude": 128.6510886,
+   "kind": "DROWSY_SHELTER",
+   "direction": "달서방향",
+   "address": "대구광역시 동구 봉무동 산53-6"
+  },
+  {
+   "id": "ds-201bf81fcf86",
+   "name": "서양주졸음쉼터(파주방향)",
+   "latitude": 37.849137,
+   "longitude": 126.9970997731,
+   "kind": "DROWSY_SHELTER",
+   "direction": "파주방향",
+   "address": "경기도 양주시 은현면 도하리 601-1"
+  },
+  {
+   "id": "ds-2141ce6e0a79",
+   "name": "선기졸음쉼터(서울방향)",
+   "latitude": 36.13627142,
+   "longitude": 128.3165002,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경상북도 구미시 도량동 333-2"
+  },
+  {
+   "id": "ds-21bbfb9c3081",
+   "name": "남산졸음쉼터(서울방향)",
+   "latitude": 37.7417079705,
+   "longitude": 127.6721730841,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "강원특별자치도 춘천시 남산면 행촌리 산122-2"
+  },
+  {
+   "id": "ds-24368e19d060",
+   "name": "창녕졸음쉼터(양평방향)",
+   "latitude": 35.53087935,
+   "longitude": 128.4885717,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양평방향",
+   "address": "경상남도 창녕군 창녕읍 탐하리 524-1"
+  },
+  {
+   "id": "ds-267a26c0c1ab",
+   "name": "현풍졸음쉼터(창원방향)",
+   "latitude": 35.66671716,
+   "longitude": 128.435925,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "대구광역시 달성군 현풍면 대리 211-1"
+  },
+  {
+   "id": "ds-26a0414b8cfa",
+   "name": "줄포졸음쉼터(목포방향)",
+   "latitude": 35.5704338,
+   "longitude": 126.6947728,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "전북특별자치도 고창군 흥덕면 신덕리 641-8"
+  },
+  {
+   "id": "ds-271f2efff742",
+   "name": "대소원졸음쉼터(양평방향)",
+   "latitude": 36.97440026,
+   "longitude": 127.8477682,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양평방향",
+   "address": "충청북도 충주시 대소원면 완오리 산38-1"
+  },
+  {
+   "id": "ds-286eb3a77421",
+   "name": "도척졸음쉼터(통영방향)",
+   "latitude": 37.32332718,
+   "longitude": 127.3387835,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경기도 광주시 도척면 진우리 482-1"
+  },
+  {
+   "id": "ds-28cce171885c",
+   "name": "수한졸음쉼터(영덕방향)",
+   "latitude": 36.472968,
+   "longitude": 127.6574463709,
+   "kind": "DROWSY_SHELTER",
+   "direction": "영덕방향",
+   "address": "충청북도 보은군 수한면 동정리 산25-52"
+  },
+  {
+   "id": "ds-2903a0ceb102",
+   "name": "금산졸음쉼터(하남방향)",
+   "latitude": 36.06077801,
+   "longitude": 127.551852,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "충청남도 금산군 부리면 불이리 5"
+  },
+  {
+   "id": "ds-29846e7d7791",
+   "name": "북안졸음쉼터(서울방향)",
+   "latitude": 35.9246295,
+   "longitude": 128.999844,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경상북도 영천시 북안면 반정리 294-1"
+  },
+  {
+   "id": "ds-2a1068071a6c",
+   "name": "삽교졸음쉼터(인천방향)",
+   "latitude": 37.52293298,
+   "longitude": 128.2754878,
+   "kind": "DROWSY_SHELTER",
+   "direction": "인천방향",
+   "address": "강원특별자치도 횡성군 둔내면 삽교리 산120-11"
+  },
+  {
+   "id": "ds-2a71a7b3b081",
+   "name": "곤양졸음쉼터(부산방향)",
+   "latitude": 35.05317013,
+   "longitude": 127.9446964,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상남도 사천시 곤양면 맥사리 165-7"
+  },
+  {
+   "id": "ds-2b9932e15257",
+   "name": "장성물류졸음쉼터(고창방향)",
+   "latitude": 35.347596,
+   "longitude": 126.778012,
+   "kind": "DROWSY_SHELTER",
+   "direction": "고창방향",
+   "address": "전라남도 장성군 장성읍 안평리 산26-3"
+  },
+  {
+   "id": "ds-2bd896d15d16",
+   "name": "대신졸음쉼터(서울방향)",
+   "latitude": 36.15281944,
+   "longitude": 128.1907565,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경상북도 김천시 아포읍 대신리 1067-1"
+  },
+  {
+   "id": "ds-2c21d1d36240",
+   "name": "수동졸음쉼터(하남방향)",
+   "latitude": 35.51724618,
+   "longitude": 127.7962334,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경상남도 함양군 수동면 화산리 858-28"
+  },
+  {
+   "id": "ds-2e7b7f57a995",
+   "name": "광천졸음쉼터(서울방향)",
+   "latitude": 36.47863534,
+   "longitude": 126.5872371,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청남도 보령시 천북면 신죽리 504"
+  },
+  {
+   "id": "ds-2ed27ecc3283",
+   "name": "울산졸음쉼터(언양방향)",
+   "latitude": 35.55044188,
+   "longitude": 129.1675288,
+   "kind": "DROWSY_SHELTER",
+   "direction": "언양방향",
+   "address": "울산광역시 울주군 언양읍 반송리 산92-2"
+  },
+  {
+   "id": "ds-301c298435dc",
+   "name": "봉무졸음쉼터(동대구방향)",
+   "latitude": 35.93148217,
+   "longitude": 128.6525431,
+   "kind": "DROWSY_SHELTER",
+   "direction": "동대구방향",
+   "address": "대구광역시 동구 봉무동 산56-5"
+  },
+  {
+   "id": "ds-3122de7f1898",
+   "name": "상주졸음쉼터(청주방향)",
+   "latitude": 36.42575645,
+   "longitude": 128.0442945,
+   "kind": "DROWSY_SHELTER",
+   "direction": "청주방향",
+   "address": "경상북도 상주시 내서면 고곡리 산254-1"
+  },
+  {
+   "id": "ds-31a3a174f3f3",
+   "name": "횡성졸음쉼터(춘천방향)",
+   "latitude": 37.573915,
+   "longitude": 127.973639,
+   "kind": "DROWSY_SHELTER",
+   "direction": "춘천방향",
+   "address": "강원특별자치도 횡성군 공근면 공근리 15-1"
+  },
+  {
+   "id": "ds-32d313b3c294",
+   "name": "삼기졸음쉼터(순천방향)",
+   "latitude": 35.23383947,
+   "longitude": 127.2041806,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "전라남도 곡성군 삼기면 월경리 302-17"
+  },
+  {
+   "id": "ds-33d6014f782b",
+   "name": "진례졸음쉼터(순천방향)",
+   "latitude": 35.24528591,
+   "longitude": 128.7603006,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "경상남도 김해시 진례면 초전리 381-1"
+  },
+  {
+   "id": "ds-33e353b8e0e1",
+   "name": "고성졸음쉼터(하남방향)",
+   "latitude": 34.98175411,
+   "longitude": 128.3735157,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경상남도 고성군 거류면 송산리 산98"
+  },
+  {
+   "id": "ds-3692d7bf780e",
+   "name": "묵계졸음쉼터(영덕방향)",
+   "latitude": 36.43786162,
+   "longitude": 128.9287923,
+   "kind": "DROWSY_SHELTER",
+   "direction": "영덕방향",
+   "address": "경상북도 안동시 길안면 묵계리 산102-3"
+  },
+  {
+   "id": "ds-373ad0f0a9a6",
+   "name": "논산졸음쉼터(회덕방향)",
+   "latitude": 36.15344577,
+   "longitude": 127.164785,
+   "kind": "DROWSY_SHELTER",
+   "direction": "회덕방향",
+   "address": "충청남도 논산시 가야곡면 등리 산86-1"
+  },
+  {
+   "id": "ds-37736817a422",
+   "name": "읍내졸음쉼터(춘천방향)",
+   "latitude": 35.94842006,
+   "longitude": 128.5476662,
+   "kind": "DROWSY_SHELTER",
+   "direction": "춘천방향",
+   "address": "대구광역시 북구 읍내동 624-2"
+  },
+  {
+   "id": "ds-38262b037a66",
+   "name": "진주졸음쉼터(하남방향)",
+   "latitude": 35.1974427,
+   "longitude": 128.0291887,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경상남도 진주시 판문동 992-1"
+  },
+  {
+   "id": "ds-3838cfe63ec9",
+   "name": "풍산졸음쉼터(부산방향)",
+   "latitude": 36.60315372,
+   "longitude": 128.5841601,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상북도 안동시 풍산읍 만운리 1360"
+  },
+  {
+   "id": "ds-385ac1646996",
+   "name": "군자졸음쉼터(인천방향)",
+   "latitude": 37.35875579,
+   "longitude": 126.7807808,
+   "kind": "DROWSY_SHELTER",
+   "direction": "인천방향",
+   "address": "경기도 시흥시 군자로335번길 36-29"
+  },
+  {
+   "id": "ds-3916dc589b9f",
+   "name": "양산졸음쉼터(서울방향)",
+   "latitude": 35.34235591,
+   "longitude": 129.0421478,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경상남도 양산시 중부동 119-1"
+  },
+  {
+   "id": "ds-394111c551c7",
+   "name": "곤양졸음쉼터(순천방향)",
+   "latitude": 35.05317013,
+   "longitude": 127.9446964,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "경상남도 사천시 곤양면 맥사리 165-7"
+  },
+  {
+   "id": "ds-3a4eb0a4fd89",
+   "name": "소흘졸음쉼터(포천방향)",
+   "latitude": 37.8290215213,
+   "longitude": 127.159791,
+   "kind": "DROWSY_SHELTER",
+   "direction": "포천방향",
+   "address": "경기도 포천시 소흘읍 이가팔리 650"
+  },
+  {
+   "id": "ds-3a8e5729c047",
+   "name": "석적졸음쉼터(서울방향)",
+   "latitude": 36.05163274,
+   "longitude": 128.4080556,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경상북도 칠곡군 석적읍 포남리 587-3"
+  },
+  {
+   "id": "ds-3aa500339905",
+   "name": "상번천졸음쉼터(하남방향)",
+   "latitude": 37.44787093,
+   "longitude": 127.275447,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경기도 광주시 남한산성면 상번천리 245"
+  },
+  {
+   "id": "ds-3aa6056c375f",
+   "name": "월정졸음쉼터(강릉방향)",
+   "latitude": 37.66392828,
+   "longitude": 128.5932328,
+   "kind": "DROWSY_SHELTER",
+   "direction": "강릉방향",
+   "address": "강원특별자치도 평창군 대관령면 유천리 838-1"
+  },
+  {
+   "id": "ds-3b3fca443bb9",
+   "name": "진봉졸음쉼터(새만금방향)",
+   "latitude": 35.8527172626,
+   "longitude": 126.7807558424,
+   "kind": "DROWSY_SHELTER",
+   "direction": "새만금방향",
+   "address": "전북특별자치도 김제시 진봉면 상궐리 1590-24"
+  },
+  {
+   "id": "ds-3bd37419cb58",
+   "name": "태령졸음쉼터(담양방향)",
+   "latitude": 35.24883378,
+   "longitude": 126.9283468,
+   "kind": "DROWSY_SHELTER",
+   "direction": "담양방향",
+   "address": "광주광역시 북구 태령동 206-6"
+  },
+  {
+   "id": "ds-3e17fea4bea2",
+   "name": "월정졸음쉼터(인천방향)",
+   "latitude": 37.66472501,
+   "longitude": 128.5932277,
+   "kind": "DROWSY_SHELTER",
+   "direction": "인천방향",
+   "address": "강원특별자치도 평창군 진부면 간평리 562-2"
+  },
+  {
+   "id": "ds-3e62f4cc36cf",
+   "name": "추풍령졸음쉼터(서울방향)",
+   "latitude": 36.21098462,
+   "longitude": 127.9885463,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청북도 영동군 추풍령면 추풍령리 557-3"
+  },
+  {
+   "id": "ds-3f85a2d093b7",
+   "name": "번천졸음쉼터(하남방향)",
+   "latitude": 37.45446159,
+   "longitude": 127.254336,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경기도 광주시 남한산성면 광지원리 306-1"
+  },
+  {
+   "id": "ds-41ac4f81508b",
+   "name": "진봉졸음쉼터(장수방향)",
+   "latitude": 35.853632,
+   "longitude": 126.77579,
+   "kind": "DROWSY_SHELTER",
+   "direction": "장수방향",
+   "address": "전북특별자치도 김제시 진봉면 상궐리 1579-9"
+  },
+  {
+   "id": "ds-42c13d283e6b",
+   "name": "삼례졸음쉼터(천안방향)",
+   "latitude": 35.91813603,
+   "longitude": 127.0700848,
+   "kind": "DROWSY_SHELTER",
+   "direction": "천안방향",
+   "address": "전북특별자치도 익산시 왕궁면 온수리 340-3"
+  },
+  {
+   "id": "ds-4303cc2846b4",
+   "name": "광혜원졸음쉼터(평택방향)",
+   "latitude": 36.95214955,
+   "longitude": 127.4258721,
+   "kind": "DROWSY_SHELTER",
+   "direction": "평택방향",
+   "address": "충청북도 진천군 광혜원면 죽현리 61-4"
+  },
+  {
+   "id": "ds-43292b0fa1e1",
+   "name": "춘장대졸음쉼터(목포방향)",
+   "latitude": 36.18898038,
+   "longitude": 126.5929585,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "충청남도 보령시 주산면 증산리 197"
+  },
+  {
+   "id": "ds-43f521e33485",
+   "name": "정우졸음쉼터(순천방향)",
+   "latitude": 35.63536201,
+   "longitude": 126.9008508,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "전북특별자치도 정읍시 정우면 우산리 216-2"
+  },
+  {
+   "id": "ds-4466cfa9f222",
+   "name": "강현졸음쉼터(속초방향)",
+   "latitude": 38.11953935,
+   "longitude": 128.5797114,
+   "kind": "DROWSY_SHELTER",
+   "direction": "속초방향",
+   "address": "강원특별자치도 양양군 강현면 침교리 산99-2"
+  },
+  {
+   "id": "ds-45205da88a73",
+   "name": "마이산졸음쉼터(익산방향)",
+   "latitude": 35.77052762,
+   "longitude": 127.3590723,
+   "kind": "DROWSY_SHELTER",
+   "direction": "익산방향",
+   "address": "전북특별자치도 진안군 마령면 덕천리 산14-5"
+  },
+  {
+   "id": "ds-464547de88f5",
+   "name": "전주졸음쉼터(천안방향)",
+   "latitude": 35.86947805,
+   "longitude": 127.0516682,
+   "kind": "DROWSY_SHELTER",
+   "direction": "천안방향",
+   "address": "전북특별자치도 전주시 덕진구 장동 산17-6"
+  },
+  {
+   "id": "ds-46f2f6757dda",
+   "name": "여주졸음쉼터(창원방향)",
+   "latitude": 37.34166074,
+   "longitude": 127.5467197,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "경기도 여주시 흥천면 귀백리 308-4"
+  },
+  {
+   "id": "ds-476cb368947a",
+   "name": "옥천졸음쉼터(부산방향)",
+   "latitude": 36.32809569,
+   "longitude": 127.5408926,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "충청북도 옥천군 군북면 이백리 산23-10"
+  },
+  {
+   "id": "ds-4774305f0c84",
+   "name": "시흥졸음쉼터(일산방향)",
+   "latitude": 37.45071304,
+   "longitude": 126.8038421,
+   "kind": "DROWSY_SHELTER",
+   "direction": "일산방향",
+   "address": "경기도 시흥시 계수동 90-6"
+  },
+  {
+   "id": "ds-47ef948c83c2",
+   "name": "용연졸음쉼터(서울방향)",
+   "latitude": 36.86123428,
+   "longitude": 126.645546,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청남도 당진시 용연동 산119-2"
+  },
+  {
+   "id": "ds-49416a187232",
+   "name": "김포졸음쉼터(일산방향)",
+   "latitude": 37.592299,
+   "longitude": 126.768356,
+   "kind": "DROWSY_SHELTER",
+   "direction": "일산방향",
+   "address": "경기도 김포시 고촌읍 신곡리 757-1"
+  },
+  {
+   "id": "ds-4c9855514a9b",
+   "name": "삼례졸음쉼터(순천방향)",
+   "latitude": 35.90227648,
+   "longitude": 127.0575491,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "전북특별자치도 완주군 삼례읍 해전리 4-20"
+  },
+  {
+   "id": "ds-4d7b7b8e2ea1",
+   "name": "시초졸음쉼터(서천방향)",
+   "latitude": 36.12771449,
+   "longitude": 126.7661638,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서천방향",
+   "address": "충청남도 서천군 시초면 봉선리 673-12"
+  },
+  {
+   "id": "ds-4e89d023c8b8",
+   "name": "내장산졸음쉼터(순천방향)",
+   "latitude": 35.49545628,
+   "longitude": 126.797915,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "전북특별자치도 정읍시 입암면 하부리 793-2"
+  },
+  {
+   "id": "ds-4ee184856f79",
+   "name": "양양졸음쉼터(서울방향)",
+   "latitude": 37.99956719,
+   "longitude": 128.5363842,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "강원특별자치도 양양군 서면 영덕리 산81-63"
+  },
+  {
+   "id": "ds-4f615eea2f63",
+   "name": "서산졸음쉼터(목포방향)",
+   "latitude": 36.828862,
+   "longitude": 126.588515,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "충청남도 서산시 운산면 안호리 16-16도"
+  },
+  {
+   "id": "ds-4f98a99ae1a1",
+   "name": "갈산졸음쉼터(서울방향)",
+   "latitude": 36.63471618,
+   "longitude": 126.5531285,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청남도 홍성군 갈산면 대사리 263"
+  },
+  {
+   "id": "ds-5086f3f7df59",
+   "name": "대강졸음쉼터(광주광역시방향)",
+   "latitude": 35.38527305,
+   "longitude": 127.2343431,
+   "kind": "DROWSY_SHELTER",
+   "direction": "광주광역시방향",
+   "address": "전북특별자치도 남원시 대강면 입암리 141"
+  },
+  {
+   "id": "ds-508b672fe8e6",
+   "name": "일죽졸음쉼터(통영방향)",
+   "latitude": 37.08423849,
+   "longitude": 127.4570094,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경기도 안성시 일죽면 월정리 755"
+  },
+  {
+   "id": "ds-5117df927432",
+   "name": "소초졸음쉼터(인천방향)",
+   "latitude": 37.42026395,
+   "longitude": 128.0019496,
+   "kind": "DROWSY_SHELTER",
+   "direction": "인천방향",
+   "address": "강원특별자치도 원주시 소초면 평장리 산125-4"
+  },
+  {
+   "id": "ds-52d820c9e325",
+   "name": "옥천졸음쉼터(서울방향)",
+   "latitude": 36.33624741,
+   "longitude": 127.5284274,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청북도 옥천군 군북면 증약리 156-2"
+  },
+  {
+   "id": "ds-52e468f6d085",
+   "name": "양지졸음쉼터(세종방향)",
+   "latitude": 37.241176,
+   "longitude": 127.2509953624,
+   "kind": "DROWSY_SHELTER",
+   "direction": "세종방향",
+   "address": "경기도 용인시 처인구 양지면 주북리441-6"
+  },
+  {
+   "id": "ds-546168d7864b",
+   "name": "오창졸음쉼터(하남방향)",
+   "latitude": 36.73464638,
+   "longitude": 127.4566151,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "충청북도 청주시 청원구 오창읍 괴정리 46-1"
+  },
+  {
+   "id": "ds-54c9bf85f8b3",
+   "name": "김포졸음쉼터(판교방향)",
+   "latitude": 37.58700244,
+   "longitude": 126.7606632,
+   "kind": "DROWSY_SHELTER",
+   "direction": "판교방향",
+   "address": "경기도 김포시 고촌읍 신곡리 800-1"
+  },
+  {
+   "id": "ds-55aeeb6fdf9c",
+   "name": "오산졸음쉼터(서울방향)",
+   "latitude": 37.1542659,
+   "longitude": 127.0861027,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경기도 오산시 부산동 418-1"
+  },
+  {
+   "id": "ds-5631ea1d91fb",
+   "name": "주암졸음쉼터(순천방향)",
+   "latitude": 35.05593487,
+   "longitude": 127.2773555,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "전라남도 순천시 주암면 복다리 449-3"
+  },
+  {
+   "id": "ds-589a06c17faf",
+   "name": "탄부졸음쉼터(영덕방향)",
+   "latitude": 36.45441271,
+   "longitude": 127.769757,
+   "kind": "DROWSY_SHELTER",
+   "direction": "영덕방향",
+   "address": "충청북도 보은군 탄부면 매화리 산1-2"
+  },
+  {
+   "id": "ds-58d66799224a",
+   "name": "광양졸음쉼터(부산방향)",
+   "latitude": 34.98402631,
+   "longitude": 127.5891467,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "전라남도 광양시 광양읍 우산리 425"
+  },
+  {
+   "id": "ds-59760d1705cd",
+   "name": "서양주졸음쉼터(양주방향)",
+   "latitude": 37.848519,
+   "longitude": 126.998062,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양주방향",
+   "address": "경기도 양주시 은현면 도하리 580-22"
+  },
+  {
+   "id": "ds-599810110c00",
+   "name": "지천졸음쉼터(부산방향)",
+   "latitude": 35.92212137,
+   "longitude": 128.4844738,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상북도 칠곡군 지천면 영오리 753-1"
+  },
+  {
+   "id": "ds-5a4a182d37d1",
+   "name": "농다리졸음쉼터(통영방향)",
+   "latitude": 36.83465606,
+   "longitude": 127.494039,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "충청북도 진천군 문백면 구곡리 87"
+  },
+  {
+   "id": "ds-5a863638ea62",
+   "name": "탄부졸음쉼터(청주방향)",
+   "latitude": 36.45441271,
+   "longitude": 127.769757,
+   "kind": "DROWSY_SHELTER",
+   "direction": "청주방향",
+   "address": "충청북도 보은군 탄부면 매화리 산1-2"
+  },
+  {
+   "id": "ds-5ae7629ddf82",
+   "name": "춘장대졸음쉼터(서울방향)",
+   "latitude": 36.19893677,
+   "longitude": 126.5884265,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청남도 보령시 주산면 증산리 266-2"
+  },
+  {
+   "id": "ds-5b270f2252b5",
+   "name": "서서울졸음쉼터(서울방향)",
+   "latitude": 37.35664272,
+   "longitude": 126.8648238,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경기도 안산시 상록구 장하동 산8-1"
+  },
+  {
+   "id": "ds-5d1c8549bd16",
+   "name": "태인졸음쉼터(천안방향)",
+   "latitude": 35.66350643,
+   "longitude": 126.9322504,
+   "kind": "DROWSY_SHELTER",
+   "direction": "천안방향",
+   "address": "전북특별자치도 정읍시 태인면 오봉리 150-3"
+  },
+  {
+   "id": "ds-5d937f9e9eb1",
+   "name": "명곡졸음쉼터(춘천방향)",
+   "latitude": 36.12560806,
+   "longitude": 128.5417815,
+   "kind": "DROWSY_SHELTER",
+   "direction": "춘천방향",
+   "address": "경상북도 구미시 장천면 명곡리 539-1"
+  },
+  {
+   "id": "ds-64de4add4020",
+   "name": "하화졸음쉼터(청주방향)",
+   "latitude": 36.41882715,
+   "longitude": 128.699326,
+   "kind": "DROWSY_SHELTER",
+   "direction": "청주방향",
+   "address": "경상북도 의성군 단촌면 관덕리 산52"
+  },
+  {
+   "id": "ds-67aa5dacb552",
+   "name": "칠곡졸음쉼터(동대구방향)",
+   "latitude": 35.910297,
+   "longitude": 128.504056,
+   "kind": "DROWSY_SHELTER",
+   "direction": "동대구방향",
+   "address": "경상북도 칠곡군 지천면 연호리 136-11"
+  },
+  {
+   "id": "ds-67e08fa9938f",
+   "name": "이목졸음쉼터(강릉방향)",
+   "latitude": 37.31955099,
+   "longitude": 126.9857648,
+   "kind": "DROWSY_SHELTER",
+   "direction": "강릉방향",
+   "address": "경기도 수원시 장안구 이목동 산108"
+  },
+  {
+   "id": "ds-6835cc86156e",
+   "name": "칠곡졸음쉼터(달서방향)",
+   "latitude": 35.90491377,
+   "longitude": 128.4794864,
+   "kind": "DROWSY_SHELTER",
+   "direction": "달서방향",
+   "address": "경상북도 칠곡군 지천면 오산리 산52-9"
+  },
+  {
+   "id": "ds-6850864a91d6",
+   "name": "무창포졸음쉼터(서울방향)",
+   "latitude": 36.2749228,
+   "longitude": 126.5791253,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청남도 보령시 남포면 신흥리 572"
+  },
+  {
+   "id": "ds-69d1cd46e1a9",
+   "name": "중앙탑졸음쉼터(평택방향)",
+   "latitude": 37.04140228,
+   "longitude": 127.8318915,
+   "kind": "DROWSY_SHELTER",
+   "direction": "평택방향",
+   "address": "충청북도 충주시 중앙탑면 하구암리 352-3"
+  },
+  {
+   "id": "ds-69dafce395cb",
+   "name": "서천졸음쉼터(목포방향)",
+   "latitude": 36.06879574,
+   "longitude": 126.747055,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "충청남도 서천군 기산면 두북리 48"
+  },
+  {
+   "id": "ds-6a1b8ed8b606",
+   "name": "고북졸음쉼터(목포방향)",
+   "latitude": 36.65116146,
+   "longitude": 126.5583118,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "충청남도 서산시 고북면 신송리 산74-3"
+  },
+  {
+   "id": "ds-6a475ae46a5c",
+   "name": "봉산졸음쉼터(서울방향)",
+   "latitude": 36.15651708,
+   "longitude": 128.0264901,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경상북도 김천시 봉산면 태화리 989-4"
+  },
+  {
+   "id": "ds-6be733f6df4e",
+   "name": "상번천졸음쉼터(통영방향)",
+   "latitude": 37.44865226,
+   "longitude": 127.2736769,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경기도 광주시 남한산성면 상번천리 315-2"
+  },
+  {
+   "id": "ds-6d6fb61cf97c",
+   "name": "오창졸음쉼터(통영방향)",
+   "latitude": 36.73519974,
+   "longitude": 127.4563134,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "충청북도 청주시 청원구 오창읍 주성리 15-6"
+  },
+  {
+   "id": "ds-6dae6f724354",
+   "name": "금곡졸음쉼터(하남방향)",
+   "latitude": 35.09495156,
+   "longitude": 128.1644658,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경상남도 사천시 사천읍 금곡리 30-4"
+  },
+  {
+   "id": "ds-6e1125db6666",
+   "name": "하빈졸음쉼터(부산방향)",
+   "latitude": 35.9323362657,
+   "longitude": 128.4744569868,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "대구광역시 달성군 하빈면 대평리 산66-3"
+  },
+  {
+   "id": "ds-6f18d148b0f7",
+   "name": "울산졸음쉼터(울산방향)",
+   "latitude": 35.55007712,
+   "longitude": 129.1676029,
+   "kind": "DROWSY_SHELTER",
+   "direction": "울산방향",
+   "address": "울산광역시 울주군 언양읍 반송리 산92-4"
+  },
+  {
+   "id": "ds-6f9e9120eb35",
+   "name": "서상졸음쉼터(하남방향)",
+   "latitude": 35.63350327,
+   "longitude": 127.7139066,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경상남도 함양군 서하면 봉전리 145-16"
+  },
+  {
+   "id": "ds-709c82f033f3",
+   "name": "만종졸음쉼터(춘천방향)",
+   "latitude": 37.35014699,
+   "longitude": 127.9099097,
+   "kind": "DROWSY_SHELTER",
+   "direction": "춘천방향",
+   "address": "강원특별자치도 원주시 호저면 만종리 392-1"
+  },
+  {
+   "id": "ds-73fdbc763f31",
+   "name": "양지졸음쉼터(포천방향)",
+   "latitude": 37.2420717755,
+   "longitude": 127.2517541747,
+   "kind": "DROWSY_SHELTER",
+   "direction": "포천방향",
+   "address": "경기도 용인시 처인구 양지면 주북리451-1"
+  },
+  {
+   "id": "ds-7595df53c7a7",
+   "name": "대관령졸음쉼터(인천방향)",
+   "latitude": 37.6751734,
+   "longitude": 128.7202156,
+   "kind": "DROWSY_SHELTER",
+   "direction": "인천방향",
+   "address": "강원특별자치도 평창군 대관령면 횡계리 196-4"
+  },
+  {
+   "id": "ds-788167c16ff6",
+   "name": "흥해졸음쉼터(포항방향)",
+   "latitude": 36.133756,
+   "longitude": 129.380605,
+   "kind": "DROWSY_SHELTER",
+   "direction": "포항방향",
+   "address": "경상북도 포항시 북구 흥해읍 금장리 산36-5"
+  },
+  {
+   "id": "ds-7894816300c2",
+   "name": "낙상졸음쉼터(양평방향)",
+   "latitude": 36.44756543,
+   "longitude": 128.2059013,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양평방향",
+   "address": "경상북도 상주시 낙상동 산57"
+  },
+  {
+   "id": "ds-7a28845e71dd",
+   "name": "남정졸음쉼터(포항방향)",
+   "latitude": 36.3480595603,
+   "longitude": 129.3576105136,
+   "kind": "DROWSY_SHELTER",
+   "direction": "포항방향",
+   "address": "경상북도 영덕군 남정면 남정리 301-1"
+  },
+  {
+   "id": "ds-7a3d2645b9b1",
+   "name": "무주졸음쉼터(하남방향)",
+   "latitude": 35.911465,
+   "longitude": 127.666254,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "전북특별자치도 무주군 적상면 삼가리"
+  },
+  {
+   "id": "ds-7b480c0cb660",
+   "name": "대관령전망대졸음쉼터(강릉방향)",
+   "latitude": 37.72400902,
+   "longitude": 128.7790019,
+   "kind": "DROWSY_SHELTER",
+   "direction": "강릉방향",
+   "address": "강원특별자치도 강릉시 성산면 어흘리 803"
+  },
+  {
+   "id": "ds-7ef20e3026db",
+   "name": "김해졸음쉼터(부산방향)",
+   "latitude": 35.22085404,
+   "longitude": 128.8702906,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상남도 김해시 전하동 329"
+  },
+  {
+   "id": "ds-7f35076a2a27",
+   "name": "봉산졸음쉼터(부산방향)",
+   "latitude": 36.15643219,
+   "longitude": 128.02568,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상북도 김천시 봉산면 태화리 341"
+  },
+  {
+   "id": "ds-7f6995394d02",
+   "name": "문경졸음쉼터(양평방향)",
+   "latitude": 36.71786257,
+   "longitude": 128.1041867,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양평방향",
+   "address": "경상북도 문경시 문경읍 마원리 428-27"
+  },
+  {
+   "id": "ds-8164aeb9aa7d",
+   "name": "대소졸음쉼터(하남방향)",
+   "latitude": 36.97707396,
+   "longitude": 127.4692814,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "충청북도 음성군 대소면 오류리 208-7"
+  },
+  {
+   "id": "ds-81bdaa08b4c4",
+   "name": "금서졸음쉼터(통영방향)",
+   "latitude": 35.44032162,
+   "longitude": 127.8532348,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경상남도 산청군 금서면 특리 292"
+  },
+  {
+   "id": "ds-81d6dbecacb1",
+   "name": "옥산졸음쉼터(서울방향)",
+   "latitude": 36.655882,
+   "longitude": 127.372294,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청북도 청주시 옥산면 오산리 483-6"
+  },
+  {
+   "id": "ds-8232623ad749",
+   "name": "북대전졸음쉼터(회덕방향)",
+   "latitude": 36.40617198,
+   "longitude": 127.3678197,
+   "kind": "DROWSY_SHELTER",
+   "direction": "회덕방향",
+   "address": "대전광역시 유성구 방현동 89"
+  },
+  {
+   "id": "ds-82bfe973b674",
+   "name": "금산졸음쉼터(통영방향)",
+   "latitude": 36.03243515,
+   "longitude": 127.5720737,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "충청남도 금산군 부리면 현내리 35"
+  },
+  {
+   "id": "ds-84c6d77cd4a0",
+   "name": "송탄졸음쉼터(평택방향)",
+   "latitude": 37.030977,
+   "longitude": 127.0803249,
+   "kind": "DROWSY_SHELTER",
+   "direction": "평택방향",
+   "address": "경기도 평택시 모곡동 223-3"
+  },
+  {
+   "id": "ds-84fb9252e4c6",
+   "name": "유성졸음쉼터(회덕방향)",
+   "latitude": 36.38088562,
+   "longitude": 127.3354653,
+   "kind": "DROWSY_SHELTER",
+   "direction": "회덕방향",
+   "address": "대전광역시 유성구 죽동 2-2"
+  },
+  {
+   "id": "ds-8618c9830076",
+   "name": "일광졸음쉼터(기장방향)",
+   "latitude": 35.29233912,
+   "longitude": 129.2061941,
+   "kind": "DROWSY_SHELTER",
+   "direction": "기장방향",
+   "address": "부산광역시 기장군 일광면 용천리 257"
+  },
+  {
+   "id": "ds-864323704313",
+   "name": "완주졸음쉼터(장수방향)",
+   "latitude": 35.92835808,
+   "longitude": 127.1007658,
+   "kind": "DROWSY_SHELTER",
+   "direction": "장수방향",
+   "address": "전북특별자치도 완주군 삼례읍 석전리 80-14"
+  },
+  {
+   "id": "ds-86ea5d1ccff9",
+   "name": "보문졸음쉼터(춘천방향)",
+   "latitude": 36.68978886,
+   "longitude": 128.554036,
+   "kind": "DROWSY_SHELTER",
+   "direction": "춘천방향",
+   "address": "경상북도 예천군 보문면 오신리 산52-1"
+  },
+  {
+   "id": "ds-8733ef805251",
+   "name": "진천졸음쉼터(하남방향)",
+   "latitude": 36.85361062,
+   "longitude": 127.4868784,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "충청북도 진천군 초평면 중석리 1215"
+  },
+  {
+   "id": "ds-87812672e79b",
+   "name": "성남졸음쉼터(구리방향)",
+   "latitude": 37.44119064,
+   "longitude": 127.1347192,
+   "kind": "DROWSY_SHELTER",
+   "direction": "구리방향",
+   "address": "경기도 성남시 수정구 수진동 39"
+  },
+  {
+   "id": "ds-883805ddcef9",
+   "name": "정우졸음쉼터(천안방향)",
+   "latitude": 35.63629248,
+   "longitude": 126.9028255,
+   "kind": "DROWSY_SHELTER",
+   "direction": "천안방향",
+   "address": "전북특별자치도 정읍시 정우면 우산리 산59-8"
+  },
+  {
+   "id": "ds-8a3689132311",
+   "name": "인제졸음쉼터(서울방향)",
+   "latitude": 37.84093096,
+   "longitude": 128.233328,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "강원특별자치도 인제군 상남면 상남리 1556-17"
+  },
+  {
+   "id": "ds-8aa37b278bd3",
+   "name": "지품졸음쉼터(청주방향)",
+   "latitude": 36.4809483,
+   "longitude": 129.1747296,
+   "kind": "DROWSY_SHELTER",
+   "direction": "청주방향",
+   "address": "경상북도 영덕군 지품면 지품리 산18-6"
+  },
+  {
+   "id": "ds-8af1f742344e",
+   "name": "삼춘졸음쉼터(영덕방향)",
+   "latitude": 36.42102683,
+   "longitude": 128.576998,
+   "kind": "DROWSY_SHELTER",
+   "direction": "영덕방향",
+   "address": "경상북도 의성군 안평면 삼춘리 산19-1"
+  },
+  {
+   "id": "ds-8b2fddc66d25",
+   "name": "당진졸음쉼터(목포방향)",
+   "latitude": 36.90075043,
+   "longitude": 126.7184687,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "충청남도 당진시 송악읍 영천리 366-12"
+  },
+  {
+   "id": "ds-8bc43d9259f5",
+   "name": "고창졸음쉼터(목포방향)",
+   "latitude": 35.37775703,
+   "longitude": 126.6040472,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "전북특별자치도 고창군 무장면 덕림리 123-12"
+  },
+  {
+   "id": "ds-8d70403e795f",
+   "name": "화도졸음쉼터(서울방향)",
+   "latitude": 37.632074,
+   "longitude": 127.298592,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경기도 남양주시 화도읍 차산리 산67-59"
+  },
+  {
+   "id": "ds-8dcb6c1d4c2f",
+   "name": "양산졸음쉼터(부산방향)",
+   "latitude": 35.34312987,
+   "longitude": 129.0428034,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상남도 양산시 중부동 189-1"
+  },
+  {
+   "id": "ds-8f5c51d8b2aa",
+   "name": "수암졸음쉼터(영덕방향)",
+   "latitude": 36.46159596,
+   "longitude": 129.2107704,
+   "kind": "DROWSY_SHELTER",
+   "direction": "영덕방향",
+   "address": "경상북도 영덕군 지품면 수암리 356-4"
+  },
+  {
+   "id": "ds-8f9c468d927e",
+   "name": "송탄졸음쉼터(제천방향)",
+   "latitude": 37.032321,
+   "longitude": 127.081361,
+   "kind": "DROWSY_SHELTER",
+   "direction": "제천방향",
+   "address": "경기도 평택시 모곡동 222"
+  },
+  {
+   "id": "ds-91ebbf1a6586",
+   "name": "금성졸음쉼터(제천방향)",
+   "latitude": 37.07784786,
+   "longitude": 128.1502779,
+   "kind": "DROWSY_SHELTER",
+   "direction": "제천방향",
+   "address": "충청북도 제천시 금성면 사곡리 376-1"
+  },
+  {
+   "id": "ds-91ed7de58415",
+   "name": "창녕졸음쉼터(창원방향)",
+   "latitude": 35.54493533,
+   "longitude": 128.4757461,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "경상남도 창녕군 대지면 효정리 산73"
+  },
+  {
+   "id": "ds-922c89cd37ab",
+   "name": "만종졸음쉼터(부산방향)",
+   "latitude": 37.3495824,
+   "longitude": 127.908801,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "강원특별자치도 원주시 호저면 만종리 산29-1"
+  },
+  {
+   "id": "ds-9703ccb96666",
+   "name": "앙성졸음쉼터(양평방향)",
+   "latitude": 37.09940663,
+   "longitude": 127.7157274,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양평방향",
+   "address": "충청북도 충주시 앙성면 지당리 731-17"
+  },
+  {
+   "id": "ds-99058162af67",
+   "name": "소초졸음쉼터(강릉방향)",
+   "latitude": 37.42026395,
+   "longitude": 128.0019496,
+   "kind": "DROWSY_SHELTER",
+   "direction": "강릉방향",
+   "address": "강원특별자치도 원주시 소초면 평장리 산125-4"
+  },
+  {
+   "id": "ds-999159045ca8",
+   "name": "서상졸음쉼터(통영방향)",
+   "latitude": 35.63527857,
+   "longitude": 127.7088355,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경상남도 함양군 서하면 봉전리 산128-2"
+  },
+  {
+   "id": "ds-9a44323af0a2",
+   "name": "무주졸음쉼터(통영방향)",
+   "latitude": 35.93471333,
+   "longitude": 127.6598176,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "전북특별자치도 무주군 적상면 사산리 243-31"
+  },
+  {
+   "id": "ds-9cda481f8bdd",
+   "name": "서천졸음쉼터(서울방향)",
+   "latitude": 36.06879574,
+   "longitude": 126.747055,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청남도 서천군 기산면 두북리 48"
+  },
+  {
+   "id": "ds-9d452eaa6498",
+   "name": "강현졸음쉼터(삼척방향)",
+   "latitude": 38.1184743,
+   "longitude": 128.5795826,
+   "kind": "DROWSY_SHELTER",
+   "direction": "삼척방향",
+   "address": "강원특별자치도 양양군 강현면 사교리 산92-1"
+  },
+  {
+   "id": "ds-9d67508aca33",
+   "name": "횡성졸음쉼터(부산방향)",
+   "latitude": 37.58111815,
+   "longitude": 127.9741438,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "강원특별자치도 횡성군 공근면 공근리 11-2"
+  },
+  {
+   "id": "ds-9e17c2b649e1",
+   "name": "내장산졸음쉼터(천안방향)",
+   "latitude": 35.53752305,
+   "longitude": 126.8138166,
+   "kind": "DROWSY_SHELTER",
+   "direction": "천안방향",
+   "address": "전북특별자치도 정읍시 입암면 마석리 65-1"
+  },
+  {
+   "id": "ds-a1ae1f6708bc",
+   "name": "대신졸음쉼터(부산방향)",
+   "latitude": 36.15251095,
+   "longitude": 128.1912392,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상북도 김천시 아포읍 대신리 1123-3"
+  },
+  {
+   "id": "ds-a2103745367b",
+   "name": "담양졸음쉼터(대구방향)",
+   "latitude": 35.26094439,
+   "longitude": 126.9711687,
+   "kind": "DROWSY_SHELTER",
+   "direction": "대구방향",
+   "address": "전라남도 담양군 봉산면 유산리 7-2"
+  },
+  {
+   "id": "ds-a32ecfa765f8",
+   "name": "손양졸음쉼터(속초방향)",
+   "latitude": 38.0427843111,
+   "longitude": 128.6571063526,
+   "kind": "DROWSY_SHELTER",
+   "direction": "속초방향",
+   "address": "강원특별자치도 양양군 손양면 밀양리 36-1"
+  },
+  {
+   "id": "ds-a3b9ad56e050",
+   "name": "언양졸음쉼터(부산방향)",
+   "latitude": 35.59837007,
+   "longitude": 129.140183,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "울산광역시 울주군 언양읍 반곡리 산50-4"
+  },
+  {
+   "id": "ds-a3d577896590",
+   "name": "삼남졸음쉼터(서울방향)",
+   "latitude": 35.545332,
+   "longitude": 129.118872,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "울산광역시 울주군 삼남면 교동리 602-1"
+  },
+  {
+   "id": "ds-a55766cbcd81",
+   "name": "노은졸음쉼터(창원방향)",
+   "latitude": 37.03983887,
+   "longitude": 127.7703458,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "충청북도 충주시 노은면 신효리 679"
+  },
+  {
+   "id": "ds-a5679195fb15",
+   "name": "서김제졸음쉼터(서울방향)",
+   "latitude": 35.8525746,
+   "longitude": 126.8428673,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "전북특별자치도 김제시 만경읍 장산리 140-14"
+  },
+  {
+   "id": "ds-a64992ee2fd6",
+   "name": "금남졸음쉼터(대전방향)",
+   "latitude": 36.45062776,
+   "longitude": 127.2540825,
+   "kind": "DROWSY_SHELTER",
+   "direction": "대전방향",
+   "address": "세종특별자치시 금남면 영곡리 435-2"
+  },
+  {
+   "id": "ds-a651dd21b8e2",
+   "name": "상주졸음쉼터(영덕방향)",
+   "latitude": 36.40745802,
+   "longitude": 128.0699237,
+   "kind": "DROWSY_SHELTER",
+   "direction": "영덕방향",
+   "address": "경상북도 상주시 내서면 신촌리 산64-15"
+  },
+  {
+   "id": "ds-a6ea4842e02e",
+   "name": "동산졸음쉼터(양양방향)",
+   "latitude": 37.755496,
+   "longitude": 127.734939,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양양방향",
+   "address": "강원특별자치도 춘천시 동산면 종자리로 275-21"
+  },
+  {
+   "id": "ds-a70ab4fffdd5",
+   "name": "내남졸음쉼터(서울방향)",
+   "latitude": 35.75225939,
+   "longitude": 129.194721,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "경상북도 경주시 내남면 이조리 484-3"
+  },
+  {
+   "id": "ds-a7483fe2302f",
+   "name": "북대전졸음쉼터(논산방향)",
+   "latitude": 36.40660321,
+   "longitude": 127.3675659,
+   "kind": "DROWSY_SHELTER",
+   "direction": "논산방향",
+   "address": "대전광역시 유성구 방현동 403"
+  },
+  {
+   "id": "ds-a8c5de65285c",
+   "name": "이천졸음쉼터(강릉방향)",
+   "latitude": 37.24176915,
+   "longitude": 127.4654933,
+   "kind": "DROWSY_SHELTER",
+   "direction": "강릉방향",
+   "address": "경기도 이천시 고담동 산77-8"
+  },
+  {
+   "id": "ds-aca407d4b3b4",
+   "name": "강진졸음쉼터(영암방향)",
+   "latitude": 34.694235,
+   "longitude": 126.755097,
+   "kind": "DROWSY_SHELTER",
+   "direction": "영암방향",
+   "address": "전라남도 강진군 성전면 명산리 61-1"
+  },
+  {
+   "id": "ds-ad10aeb70231",
+   "name": "인제졸음쉼터(양양방향)",
+   "latitude": 37.84347461,
+   "longitude": 128.2354008,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양양방향",
+   "address": "강원특별자치도 인제군 상남면 상남리 1535-7"
+  },
+  {
+   "id": "ds-b1a158a10944",
+   "name": "도척졸음쉼터(하남방향)",
+   "latitude": 37.32332718,
+   "longitude": 127.3387835,
+   "kind": "DROWSY_SHELTER",
+   "direction": "하남방향",
+   "address": "경기도 광주시 도척면 진우리 482-1"
+  },
+  {
+   "id": "ds-b22c5be3d1ba",
+   "name": "서서울졸음쉼터(목포방향)",
+   "latitude": 37.35493291,
+   "longitude": 126.8619876,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "경기도 안산시 상록구 장하동 151"
+  },
+  {
+   "id": "ds-b367aa1202ea",
+   "name": "태령졸음쉼터(고창방향)",
+   "latitude": 35.24883378,
+   "longitude": 126.9283468,
+   "kind": "DROWSY_SHELTER",
+   "direction": "고창방향",
+   "address": "광주광역시 북구 태령동 206-6"
+  },
+  {
+   "id": "ds-b48ac8d74172",
+   "name": "선산졸음쉼터(양평방향)",
+   "latitude": 36.21309917,
+   "longitude": 128.2621289,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양평방향",
+   "address": "경상북도 구미시 선산읍 습례리 308"
+  },
+  {
+   "id": "ds-b4af59a50035",
+   "name": "남사졸음쉼터(부산방향)",
+   "latitude": 37.09619177,
+   "longitude": 127.1207375,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경기도 용인시 처인구 남사면 진목리 415-6"
+  },
+  {
+   "id": "ds-b52fd4aa51c3",
+   "name": "죽령졸음쉼터(춘천방향)",
+   "latitude": 36.91372023,
+   "longitude": 128.3969014,
+   "kind": "DROWSY_SHELTER",
+   "direction": "춘천방향",
+   "address": "충청북도 단양군 대강면 용부원리 산49-21"
+  },
+  {
+   "id": "ds-b73b5f252e8a",
+   "name": "창원졸음쉼터(산인방향)",
+   "latitude": 35.26331546,
+   "longitude": 128.6120097,
+   "kind": "DROWSY_SHELTER",
+   "direction": "산인방향",
+   "address": "경상남도 창원시 의창구 동정동 495"
+  },
+  {
+   "id": "ds-b975ca64402f",
+   "name": "검단졸음쉼터(부산방향)",
+   "latitude": 35.91491799,
+   "longitude": 128.6134722,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "대구광역시 북구 검단동 543-2"
+  },
+  {
+   "id": "ds-ba582387ad80",
+   "name": "신탄진졸음쉼터(부산방향)",
+   "latitude": 36.42535428,
+   "longitude": 127.4166966,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "대전광역시 대덕구 상서동 산66-11"
+  },
+  {
+   "id": "ds-ba75f6d37f7f",
+   "name": "생태습지졸음쉼터(강릉방향)",
+   "latitude": 37.23526586,
+   "longitude": 127.6038416,
+   "kind": "DROWSY_SHELTER",
+   "direction": "강릉방향",
+   "address": "경기도 여주시 가남읍 안금리 92"
+  },
+  {
+   "id": "ds-bb9cb3b1ceb9",
+   "name": "논산졸음쉼터(논산방향)",
+   "latitude": 36.1595499,
+   "longitude": 127.1757655,
+   "kind": "DROWSY_SHELTER",
+   "direction": "논산방향",
+   "address": "충청남도 논산시 가야곡면 등리 산38-3"
+  },
+  {
+   "id": "ds-bc161b4ab050",
+   "name": "향남졸음쉼터(목포방향)",
+   "latitude": 37.07012149,
+   "longitude": 126.8883559,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "경기도 화성시 만세구 향남읍 구문천리 144-11"
+  },
+  {
+   "id": "ds-bf797fd9afb1",
+   "name": "봉양졸음쉼터(춘천방향)",
+   "latitude": 37.17850371,
+   "longitude": 128.1289432,
+   "kind": "DROWSY_SHELTER",
+   "direction": "춘천방향",
+   "address": "충청북도 제천시 봉양읍 명암리 642-2"
+  },
+  {
+   "id": "ds-c16846694717",
+   "name": "순천졸음쉼터(순천방향)",
+   "latitude": 34.99606303,
+   "longitude": 127.4936989,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "전라남도 순천시 서면 죽평리 131-4"
+  },
+  {
+   "id": "ds-c268dc3830f5",
+   "name": "남정졸음쉼터(영덕방향)",
+   "latitude": 36.347541,
+   "longitude": 129.358445,
+   "kind": "DROWSY_SHELTER",
+   "direction": "영덕방향",
+   "address": "경상북도 영덕군 남정면 남정리 369-6"
+  },
+  {
+   "id": "ds-c34e890063e2",
+   "name": "배방졸음쉼터(청주방향)",
+   "latitude": 36.771618,
+   "longitude": 127.091578,
+   "kind": "DROWSY_SHELTER",
+   "direction": "청주방향",
+   "address": "충청남도 아산시 배방읍 세교리 544-1"
+  },
+  {
+   "id": "ds-c48649d10c5e",
+   "name": "장성졸음쉼터(천안방향)",
+   "latitude": 35.3168901,
+   "longitude": 126.7939767,
+   "kind": "DROWSY_SHELTER",
+   "direction": "천안방향",
+   "address": "전라남도 장성군 장성읍 유탕리 1660-2"
+  },
+  {
+   "id": "ds-c5a85731fa22",
+   "name": "여주졸음쉼터(양평방향)",
+   "latitude": 37.34228633,
+   "longitude": 127.5464181,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양평방향",
+   "address": "경기도 여주시 흥천면 귀백리 261-7"
+  },
+  {
+   "id": "ds-c79635bd2ccf",
+   "name": "적금졸음쉼터(강릉방향)",
+   "latitude": 37.25885706,
+   "longitude": 127.7153001,
+   "kind": "DROWSY_SHELTER",
+   "direction": "강릉방향",
+   "address": "경기도 여주시 강천면 적금리 588-2"
+  },
+  {
+   "id": "ds-c86e149371f7",
+   "name": "청성졸음쉼터(서울방향)",
+   "latitude": 36.27171161,
+   "longitude": 127.7407581,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청북도 옥천군 청성면 조천리 1100-19"
+  },
+  {
+   "id": "ds-c93be764df73",
+   "name": "홍천강졸음쉼터(부산방향)",
+   "latitude": 37.71175324,
+   "longitude": 127.8275845,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "강원특별자치도 홍천군 북방면 소매곡리 295-1"
+  },
+  {
+   "id": "ds-c9a5fc4776de",
+   "name": "청계졸음쉼터(일산방향)",
+   "latitude": 37.39327011,
+   "longitude": 127.0223096,
+   "kind": "DROWSY_SHELTER",
+   "direction": "일산방향",
+   "address": "경기도 의왕시 안양판교로 476"
+  },
+  {
+   "id": "ds-c9f63fdc60fe",
+   "name": "몽탄졸음쉼터(목포방향)",
+   "latitude": 34.95257541,
+   "longitude": 126.5038207,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "전라남도 무안군 몽탄면 학산리 764"
+  },
+  {
+   "id": "ds-cb48003b1ada",
+   "name": "장성졸음쉼터(순천방향)",
+   "latitude": 35.31545483,
+   "longitude": 126.7935583,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "전라남도 장성군 장성읍 유탕리 1659-1"
+  },
+  {
+   "id": "ds-cc43c08b0eeb",
+   "name": "남상졸음쉼터(대구방향)",
+   "latitude": 35.636051,
+   "longitude": 127.906245,
+   "kind": "DROWSY_SHELTER",
+   "direction": "대구방향",
+   "address": "경상남도 거창군 남상면 무촌리 1193"
+  },
+  {
+   "id": "ds-cc78789088a7",
+   "name": "동광주졸음쉼터(천안방향)",
+   "latitude": 35.2085509433,
+   "longitude": 126.93939,
+   "kind": "DROWSY_SHELTER",
+   "direction": "천안방향",
+   "address": "광주광역시 북구 장등동 산247-2"
+  },
+  {
+   "id": "ds-cdcf00822384",
+   "name": "모가졸음쉼터(통영방향)",
+   "latitude": 37.19659002,
+   "longitude": 127.4433182,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경기도 이천시 모가면 신갈리 587-1"
+  },
+  {
+   "id": "ds-ce04a1dd0041",
+   "name": "고령졸음쉼터(대구방향)",
+   "latitude": 35.72240209,
+   "longitude": 128.2973482,
+   "kind": "DROWSY_SHELTER",
+   "direction": "대구방향",
+   "address": "경상북도 고령군 개진면 양전리 산80-3"
+  },
+  {
+   "id": "ds-d0b91b91365b",
+   "name": "개진졸음쉼터(양평방향)",
+   "latitude": 35.7041488,
+   "longitude": 128.417746,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양평방향",
+   "address": "경상북도 고령군 개진면 부리 781-4"
+  },
+  {
+   "id": "ds-d1e64c6c10b3",
+   "name": "오봉졸음쉼터(창원방향)",
+   "latitude": 36.09261436,
+   "longitude": 128.2616627,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "경상북도 김천시 남면 오봉리 산196-2"
+  },
+  {
+   "id": "ds-d3cef9a0b3aa",
+   "name": "서대전졸음쉼터(논산방향)",
+   "latitude": 36.31569355,
+   "longitude": 127.3066125,
+   "kind": "DROWSY_SHELTER",
+   "direction": "논산방향",
+   "address": "대전광역시 유성구 대정동 55-5"
+  },
+  {
+   "id": "ds-d5a0b8eedd92",
+   "name": "몽탄졸음쉼터(서울방향)",
+   "latitude": 34.94576778,
+   "longitude": 126.504596,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "전라남도 무안군 몽탄면 내리 1-2"
+  },
+  {
+   "id": "ds-d64110b736c2",
+   "name": "주암졸음쉼터(천안방향)",
+   "latitude": 35.05593487,
+   "longitude": 127.2773555,
+   "kind": "DROWSY_SHELTER",
+   "direction": "천안방향",
+   "address": "전라남도 순천시 주암면 복다리 449-3"
+  },
+  {
+   "id": "ds-d7ee97cab49d",
+   "name": "창원졸음쉼터(창원방향)",
+   "latitude": 35.26331546,
+   "longitude": 128.6120097,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "경상남도 창원시 의창구 동정동 495"
+  },
+  {
+   "id": "ds-d814c7389558",
+   "name": "양양졸음쉼터(양양방향)",
+   "latitude": 37.99622926,
+   "longitude": 128.5344015,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양양방향",
+   "address": "강원특별자치도 양양군 서면 서림리 산1-51"
+  },
+  {
+   "id": "ds-d84f4b9270c4",
+   "name": "삼기졸음쉼터(천안방향)",
+   "latitude": 35.23404867,
+   "longitude": 127.2041699,
+   "kind": "DROWSY_SHELTER",
+   "direction": "천안방향",
+   "address": "전라남도 곡성군 삼기면 월경리 17-2"
+  },
+  {
+   "id": "ds-d935e8c29f92",
+   "name": "북창원졸음쉼터(부산방향)",
+   "latitude": 35.28314827,
+   "longitude": 128.6172025,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상남도 창원시 의창구 북면 지개리 341"
+  },
+  {
+   "id": "ds-d9cdb6f1d8a5",
+   "name": "김해졸음쉼터(순천방향)",
+   "latitude": 35.22085404,
+   "longitude": 128.8702906,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "경상남도 김해시 전하동 329"
+  },
+  {
+   "id": "ds-da84c7003059",
+   "name": "지수졸음쉼터(순천방향)",
+   "latitude": 35.20659712,
+   "longitude": 128.2537064,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "경상남도 진주시 사봉면 방촌리 산21-2"
+  },
+  {
+   "id": "ds-dab82bea28b4",
+   "name": "대덕졸음쉼터(천안방향)",
+   "latitude": 35.24506423,
+   "longitude": 127.0258298,
+   "kind": "DROWSY_SHELTER",
+   "direction": "천안방향",
+   "address": "전라남도 담양군 대덕면 매산리 419-12"
+  },
+  {
+   "id": "ds-dc7a0e86842d",
+   "name": "사벌졸음쉼터(창원방향)",
+   "latitude": 36.46288735,
+   "longitude": 128.200327,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "경상북도 상주시 사벌면 덕담리 1458-9"
+  },
+  {
+   "id": "ds-dcb3659c8d1b",
+   "name": "광양졸음쉼터(순천방향)",
+   "latitude": 34.98402631,
+   "longitude": 127.5891467,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "전라남도 광양시 광양읍 우산리 425"
+  },
+  {
+   "id": "ds-dcfa47f59d43",
+   "name": "흥해졸음쉼터(영덕방향)",
+   "latitude": 36.1326411799,
+   "longitude": 129.3815152648,
+   "kind": "DROWSY_SHELTER",
+   "direction": "영덕방향",
+   "address": "경상북도 포항시 북구 흥해읍 금장리 산37-2"
+  },
+  {
+   "id": "ds-e05df8abe135",
+   "name": "입장졸음쉼터(부산방향)",
+   "latitude": 36.91443246,
+   "longitude": 127.1884647,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "충청남도 천안시 서북구 입장면 용정리 48-19"
+  },
+  {
+   "id": "ds-e310aa72f9d2",
+   "name": "장성물류졸음쉼터(담양방향)",
+   "latitude": 35.34725215,
+   "longitude": 126.7777965,
+   "kind": "DROWSY_SHELTER",
+   "direction": "담양방향",
+   "address": "전라남도 장성군 장성읍 안평리 산26-3"
+  },
+  {
+   "id": "ds-e33ec7c1b841",
+   "name": "쌍림졸음쉼터(광주광역시방향)",
+   "latitude": 35.7006443,
+   "longitude": 128.2338851,
+   "kind": "DROWSY_SHELTER",
+   "direction": "광주광역시방향",
+   "address": "경상북도 고령군 쌍림면 월막리 288-3"
+  },
+  {
+   "id": "ds-e4243a8a74d5",
+   "name": "전주졸음쉼터(순천방향)",
+   "latitude": 35.86956429,
+   "longitude": 127.0513858,
+   "kind": "DROWSY_SHELTER",
+   "direction": "순천방향",
+   "address": "전북특별자치도 전주시 덕진구 장동 957-31"
+  },
+  {
+   "id": "ds-e66b94c616a0",
+   "name": "아포졸음쉼터(창원방향)",
+   "latitude": 36.19807703,
+   "longitude": 128.2591005,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "경상북도 김천시 아포읍 예리 산4-1"
+  },
+  {
+   "id": "ds-e82fbefac276",
+   "name": "연곡졸음쉼터(부산방향)",
+   "latitude": 36.95431144,
+   "longitude": 127.1830073,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "충청남도 천안시 서북구 입장면 연곡리 243-5"
+  },
+  {
+   "id": "ds-e83e1e3bd88e",
+   "name": "진례졸음쉼터(부산방향)",
+   "latitude": 35.24932395,
+   "longitude": 128.7589787,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상남도 김해시 진례면 초전리 257-1"
+  },
+  {
+   "id": "ds-e94c91c06415",
+   "name": "안평졸음쉼터(춘천방향)",
+   "latitude": 36.37903059,
+   "longitude": 128.5774794,
+   "kind": "DROWSY_SHELTER",
+   "direction": "춘천방향",
+   "address": "경상북도 의성군 안평면 기도리 254-38"
+  },
+  {
+   "id": "ds-ea167c2af245",
+   "name": "적금졸음쉼터(인천방향)",
+   "latitude": 37.25285377,
+   "longitude": 127.7036535,
+   "kind": "DROWSY_SHELTER",
+   "direction": "인천방향",
+   "address": "경기도 여주시 강천면 적금리 269"
+  },
+  {
+   "id": "ds-eb0f3b77253e",
+   "name": "선기졸음쉼터(부산방향)",
+   "latitude": 36.13630671,
+   "longitude": 128.3161787,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상북도 구미시 도량동 472-4"
+  },
+  {
+   "id": "ds-f0a1ad98a911",
+   "name": "중앙탑졸음쉼터(제천방향)",
+   "latitude": 37.04071855,
+   "longitude": 127.8304502,
+   "kind": "DROWSY_SHELTER",
+   "direction": "제천방향",
+   "address": "충청북도 충주시 중앙탑면 하구암리 389"
+  },
+  {
+   "id": "ds-f18c05d96d3f",
+   "name": "벌교졸음쉼터(영암방향)",
+   "latitude": 34.823812,
+   "longitude": 127.381603,
+   "kind": "DROWSY_SHELTER",
+   "direction": "영암방향",
+   "address": "전라남도 보성군 벌교읍 영등리 23-5"
+  },
+  {
+   "id": "ds-f41bbc20564f",
+   "name": "함양졸음쉼터(광주광역시방향)",
+   "latitude": 35.543443,
+   "longitude": 127.69929,
+   "kind": "DROWSY_SHELTER",
+   "direction": "광주광역시방향",
+   "address": "경상남도 함양군 병곡면 도천리 492-15"
+  },
+  {
+   "id": "ds-f5c7aa14dba9",
+   "name": "번천졸음쉼터(통영방향)",
+   "latitude": 37.45446159,
+   "longitude": 127.254336,
+   "kind": "DROWSY_SHELTER",
+   "direction": "통영방향",
+   "address": "경기도 광주시 남한산성면 광지원리 306-1"
+  },
+  {
+   "id": "ds-f6c4563c4f31",
+   "name": "북방졸음쉼터(서울방향)",
+   "latitude": 37.75810138,
+   "longitude": 127.880209,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "강원특별자치도 홍천군 북방면 성동리 산93-2"
+  },
+  {
+   "id": "ds-f74da3f8d32c",
+   "name": "단봉졸음쉼터(삼척방향)",
+   "latitude": 37.45971546,
+   "longitude": 129.107133,
+   "kind": "DROWSY_SHELTER",
+   "direction": "삼척방향",
+   "address": "강원특별자치도 동해시 단봉동 755-8"
+  },
+  {
+   "id": "ds-f7a495347438",
+   "name": "안평졸음쉼터(부산방향)",
+   "latitude": 36.37976405,
+   "longitude": 128.5771112,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "경상북도 의성군 안평면 기도리 75"
+  },
+  {
+   "id": "ds-f8e30ff8433f",
+   "name": "당진졸음쉼터(서울방향)",
+   "latitude": 36.90075043,
+   "longitude": 126.7184687,
+   "kind": "DROWSY_SHELTER",
+   "direction": "서울방향",
+   "address": "충청남도 당진시 송악읍 영천리 366-12"
+  },
+  {
+   "id": "ds-f9d298fbc38d",
+   "name": "광혜원졸음쉼터(제천방향)",
+   "latitude": 36.954353,
+   "longitude": 127.416561,
+   "kind": "DROWSY_SHELTER",
+   "direction": "제천방향",
+   "address": "충청북도 진천군 광혜원면 죽현리 623-7"
+  },
+  {
+   "id": "ds-fb201f59223b",
+   "name": "서김제졸음쉼터(목포방향)",
+   "latitude": 35.8529422,
+   "longitude": 126.8426538,
+   "kind": "DROWSY_SHELTER",
+   "direction": "목포방향",
+   "address": "전북특별자치도 김제시 만경읍 장산리 1124-2"
+  },
+  {
+   "id": "ds-fbad03d02399",
+   "name": "일광졸음쉼터(창원방향)",
+   "latitude": 35.29233912,
+   "longitude": 129.2061941,
+   "kind": "DROWSY_SHELTER",
+   "direction": "창원방향",
+   "address": "부산광역시 기장군 일광면 용천리 257"
+  },
+  {
+   "id": "ds-fbc145d393a1",
+   "name": "배방졸음쉼터(당진방향)",
+   "latitude": 36.771497,
+   "longitude": 127.093206,
+   "kind": "DROWSY_SHELTER",
+   "direction": "당진방향",
+   "address": "충청남도 아산시 배방읍 세교리 1071"
+  },
+  {
+   "id": "ds-fc99647147ad",
+   "name": "회인졸음쉼터(청주방향)",
+   "latitude": 36.50179435,
+   "longitude": 127.5917497,
+   "kind": "DROWSY_SHELTER",
+   "direction": "청주방향",
+   "address": "충청북도 보은군 회인면 용촌리 산28-6"
+  },
+  {
+   "id": "ds-fd84d26b7dfa",
+   "name": "산내졸음쉼터(산내방향)",
+   "latitude": 36.28080824,
+   "longitude": 127.4495555,
+   "kind": "DROWSY_SHELTER",
+   "direction": "산내방향",
+   "address": "대전광역시 동구 이사동 산16"
+  },
+  {
+   "id": "ds-fdc5f0dea47b",
+   "name": "추풍령졸음쉼터(부산방향)",
+   "latitude": 36.21062321,
+   "longitude": 127.9886414,
+   "kind": "DROWSY_SHELTER",
+   "direction": "부산방향",
+   "address": "충청북도 영동군 추풍령면 추풍령리 604-2"
+  },
+  {
+   "id": "ds-fe288097bd2a",
+   "name": "화도졸음쉼터(양양방향)",
+   "latitude": 37.631118,
+   "longitude": 127.296425,
+   "kind": "DROWSY_SHELTER",
+   "direction": "양양방향",
+   "address": "경기도 남양주시 화도읍 차산리 산67-28"
+  },
+  {
+   "id": "ds-fe357104512a",
+   "name": "구리남양주졸음쉼터(일산방향)",
+   "latitude": 37.58970285,
+   "longitude": 127.1559021,
+   "kind": "DROWSY_SHELTER",
+   "direction": "일산방향",
+   "address": "경기도 구리시 토평동 86"
+  },
+  {
+   "id": "ra-00cfcfa93ca3",
+   "name": "예산휴게소(대전방향)",
+   "latitude": 36.6234601,
+   "longitude": 126.839619,
+   "kind": "REST_AREA",
+   "direction": "대전방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-039af01f7e08",
+   "name": "예산휴게소(당진방향)",
+   "latitude": 36.619429,
+   "longitude": 126.846389,
+   "kind": "REST_AREA",
+   "direction": "당진방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-03a013ccd372",
+   "name": "곡성휴게소(천안방향)",
+   "latitude": 35.259632,
+   "longitude": 127.152741,
+   "kind": "REST_AREA",
+   "direction": "천안방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-05808e4fa852",
+   "name": "용인휴게소(강릉방향)",
+   "latitude": 37.245583,
+   "longitude": 127.2419801,
+   "kind": "REST_AREA",
+   "direction": "강릉방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-0892c92e25f8",
+   "name": "진주휴게소(부산방향)",
+   "latitude": 35.159772,
+   "longitude": 128.1220101,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-08bc03454885",
+   "name": "백양사휴게소(천안방향)",
+   "latitude": 35.393018,
+   "longitude": 126.807376,
+   "kind": "REST_AREA",
+   "direction": "천안방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-08e14bd083c2",
+   "name": "울주휴게소(함양방향)",
+   "latitude": 35.5131601,
+   "longitude": 129.128519,
+   "kind": "REST_AREA",
+   "direction": "함양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-0a7be0f77db0",
+   "name": "경산휴게소(서울방향)",
+   "latitude": 35.879323,
+   "longitude": 128.810331,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-0c3db827197b",
+   "name": "금산인삼랜드휴게소(대전방향)",
+   "latitude": 36.154689,
+   "longitude": 127.497681,
+   "kind": "REST_AREA",
+   "direction": "대전방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-0d5c4a5dcbb5",
+   "name": "원주휴게소(부산방향)",
+   "latitude": 37.435194,
+   "longitude": 127.929063,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-0d97c325e7e2",
+   "name": "문의청남대휴게소(영덕방향)",
+   "latitude": 36.542544,
+   "longitude": 127.483797,
+   "kind": "REST_AREA",
+   "direction": "영덕방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-107da818e92d",
+   "name": "성주휴게소(창원방향)",
+   "latitude": 36.010603,
+   "longitude": 128.259675,
+   "kind": "REST_AREA",
+   "direction": "창원방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-10fff5ddd642",
+   "name": "진안마이산휴게소(장수방향)",
+   "latitude": 35.7748201,
+   "longitude": 127.426362,
+   "kind": "REST_AREA",
+   "direction": "장수방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-12df945871a7",
+   "name": "고창고인돌휴게소(서울방향)",
+   "latitude": 35.4620701,
+   "longitude": 126.673477,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-13396f992451",
+   "name": "사천휴게소(순천방향)",
+   "latitude": 35.074968,
+   "longitude": 128.012589,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-15591ad8373e",
+   "name": "추풍령휴게소(서울방향)",
+   "latitude": 36.199708,
+   "longitude": 128.003242,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-1704f23941d4",
+   "name": "평창휴게소(인천방향)",
+   "latitude": 37.610876,
+   "longitude": 128.463363,
+   "kind": "REST_AREA",
+   "direction": "인천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-17eeeea09af4",
+   "name": "화서휴게소(영덕방향)",
+   "latitude": 36.444053,
+   "longitude": 127.922637,
+   "kind": "REST_AREA",
+   "direction": "영덕방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-18c500ec45a0",
+   "name": "청주휴게소(서울방향)",
+   "latitude": 36.716005,
+   "longitude": 127.349315,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-19c8c96536ad",
+   "name": "통도사휴게소(부산방향)",
+   "latitude": 35.488841,
+   "longitude": 129.090775,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-1a4a9656d76e",
+   "name": "김제휴게소(전주방향)",
+   "latitude": 35.839411,
+   "longitude": 126.89756,
+   "kind": "REST_AREA",
+   "direction": "전주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-1b8d039375f0",
+   "name": "오수휴게소(완주방향)",
+   "latitude": 35.540271,
+   "longitude": 127.311622,
+   "kind": "REST_AREA",
+   "direction": "완주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-1c5162b717cf",
+   "name": "치악휴게소(춘천방향)",
+   "latitude": 37.256692,
+   "longitude": 128.0488701,
+   "kind": "REST_AREA",
+   "direction": "춘천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-20062eb800e6",
+   "name": "벌곡휴게소(대전방향)",
+   "latitude": 36.210451,
+   "longitude": 127.270542,
+   "kind": "REST_AREA",
+   "direction": "대전방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-2051af14a336",
+   "name": "칠서휴게소(양평방향)",
+   "latitude": 35.3708801,
+   "longitude": 128.496807,
+   "kind": "REST_AREA",
+   "direction": "양평방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-21e24652c58a",
+   "name": "강천산휴게소(광주방향)",
+   "latitude": 35.3657501,
+   "longitude": 127.105451,
+   "kind": "REST_AREA",
+   "direction": "광주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-2516d38dfc57",
+   "name": "이서휴게소(순천방향)",
+   "latitude": 35.803936,
+   "longitude": 127.023705,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-2572b2f6f99c",
+   "name": "김제휴게소(새만금방향)",
+   "latitude": 35.842056,
+   "longitude": 126.90331,
+   "kind": "REST_AREA",
+   "direction": "새만금방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-26628fa4b1ac",
+   "name": "춘천휴게소(부산방향)",
+   "latitude": 37.8126801,
+   "longitude": 127.766078,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-28d8ec0b7975",
+   "name": "고성공룡나라휴게소(대전방향)",
+   "latitude": 35.056665,
+   "longitude": 128.252359,
+   "kind": "REST_AREA",
+   "direction": "대전방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-2955f4d6a9db",
+   "name": "순천휴게소(순천방향)",
+   "latitude": 35.0085501,
+   "longitude": 127.445044,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "간이휴게소"
+  },
+  {
+   "id": "ra-2a7834bc9450",
+   "name": "곡성휴게소(순천방향)",
+   "latitude": 35.258498,
+   "longitude": 127.150737,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-2d735e1b9358",
+   "name": "보성녹차휴게소(순천방향)",
+   "latitude": 34.807313,
+   "longitude": 127.181003,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "간이휴게소"
+  },
+  {
+   "id": "ra-2df25264d1c1",
+   "name": "평사휴게소(부산방향)",
+   "latitude": 35.885522,
+   "longitude": 128.867541,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-2e0c99ef34d2",
+   "name": "대천휴게소(서울방향)",
+   "latitude": 36.374457,
+   "longitude": 126.558327,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-2e9f5a995c30",
+   "name": "지리산휴게소(광주방향)",
+   "latitude": 35.483942,
+   "longitude": 127.567106,
+   "kind": "REST_AREA",
+   "direction": "광주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-2f2cbbf9461c",
+   "name": "황전휴게소(완주방향)",
+   "latitude": 35.153306,
+   "longitude": 127.454683,
+   "kind": "REST_AREA",
+   "direction": "완주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-2fb4e36fdd86",
+   "name": "거창휴게소(대구방향)",
+   "latitude": 35.706469,
+   "longitude": 128.056945,
+   "kind": "REST_AREA",
+   "direction": "대구방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-31fb0ed01060",
+   "name": "신탄진휴게소(서울방향)",
+   "latitude": 36.426834,
+   "longitude": 127.418438,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-328b28c0d6f3",
+   "name": "백양사휴게소(순천방향)",
+   "latitude": 35.394425,
+   "longitude": 126.805361,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-3361ff306f98",
+   "name": "처인휴게소",
+   "latitude": 37.3418541,
+   "longitude": 127.218541,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-338539cd08a6",
+   "name": "현풍휴게소(대구방향)",
+   "latitude": 35.701841,
+   "longitude": 128.4381001,
+   "kind": "REST_AREA",
+   "direction": "대구방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-33fb32387ac4",
+   "name": "함평나비휴게소(무안방향)",
+   "latitude": 35.038198,
+   "longitude": 126.508813,
+   "kind": "REST_AREA",
+   "direction": "무안방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-34156308872b",
+   "name": "고성공룡나라휴게소(통영방향)",
+   "latitude": 35.0518101,
+   "longitude": 128.262763,
+   "kind": "REST_AREA",
+   "direction": "통영방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-35820277dadc",
+   "name": "섬진강휴게소(부산방향)",
+   "latitude": 34.9847001,
+   "longitude": 127.770697,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-35fa750218fc",
+   "name": "외동휴게소(포항방향)",
+   "latitude": 35.672847,
+   "longitude": 129.288543,
+   "kind": "REST_AREA",
+   "direction": "포항방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-3ec1adf8c82b",
+   "name": "의성휴게소(청주방향)",
+   "latitude": 36.410954,
+   "longitude": 128.4447101,
+   "kind": "REST_AREA",
+   "direction": "청주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-3f5326b1c0cd",
+   "name": "주암휴게소(천안방향)",
+   "latitude": 35.076587,
+   "longitude": 127.265762,
+   "kind": "REST_AREA",
+   "direction": "천안방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-3f7537fc65eb",
+   "name": "구리휴게소(일산방향)",
+   "latitude": 37.628023,
+   "longitude": 127.139237,
+   "kind": "REST_AREA",
+   "direction": "일산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-400933d6d2b4",
+   "name": "화성휴게소(목포방향)",
+   "latitude": 37.143612,
+   "longitude": 126.8790801,
+   "kind": "REST_AREA",
+   "direction": "목포방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-4105db25587d",
+   "name": "죽전휴게소(서울방향)",
+   "latitude": 37.332371,
+   "longitude": 127.104795,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-42f0db8e87fd",
+   "name": "옥산휴게소(부산방향)",
+   "latitude": 36.657743,
+   "longitude": 127.369817,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-43735722416d",
+   "name": "서산휴게소(목포방향)",
+   "latitude": 36.742991,
+   "longitude": 126.565029,
+   "kind": "REST_AREA",
+   "direction": "목포방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-439e38696f37",
+   "name": "문경휴게소(창원방향)",
+   "latitude": 36.620549,
+   "longitude": 128.149982,
+   "kind": "REST_AREA",
+   "direction": "창원방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-44597c030907",
+   "name": "홍성휴게소(서울방향)",
+   "latitude": 36.5524301,
+   "longitude": 126.5818701,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-4613834952e6",
+   "name": "건천휴게소(부산방향)",
+   "latitude": 35.830716,
+   "longitude": 129.1093101,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "간이휴게소"
+  },
+  {
+   "id": "ra-4620a88f82df",
+   "name": "매송휴게소(목포방향)",
+   "latitude": 37.265084,
+   "longitude": 126.888544,
+   "kind": "REST_AREA",
+   "direction": "목포방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-484a6a2c3421",
+   "name": "금왕휴게소(제천방향)",
+   "latitude": 36.9694501,
+   "longitude": 127.590845,
+   "kind": "REST_AREA",
+   "direction": "제천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-4863089b9c47",
+   "name": "문의청남대휴게소(청주방향)",
+   "latitude": 36.544083,
+   "longitude": 127.484613,
+   "kind": "REST_AREA",
+   "direction": "청주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-4951e15d266a",
+   "name": "부안고려청자휴게소(서울방향)",
+   "latitude": 35.671598,
+   "longitude": 126.734592,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-4a0d7251f0a8",
+   "name": "금강휴게소(부산방향)",
+   "latitude": 36.279148,
+   "longitude": 127.672231,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-4db7e3f84f1b",
+   "name": "언양휴게소(서울방향)",
+   "latitude": 35.597942,
+   "longitude": 129.141801,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-4dd23a9dc816",
+   "name": "대천휴게소(목포방향)",
+   "latitude": 36.372995,
+   "longitude": 126.555684,
+   "kind": "REST_AREA",
+   "direction": "목포방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-4ecb94d84138",
+   "name": "고창고인돌휴게소(목포방향)",
+   "latitude": 35.468653,
+   "longitude": 126.673871,
+   "kind": "REST_AREA",
+   "direction": "목포방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-4f4bfd071f04",
+   "name": "서울만남휴게소(부산방향)",
+   "latitude": 37.460166,
+   "longitude": 127.041908,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-53f0ac051013",
+   "name": "옥천만남휴게소",
+   "latitude": 36.308718,
+   "longitude": 127.572308,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-54362c699b86",
+   "name": "괴산휴게소(창원방향)",
+   "latitude": 36.831456,
+   "longitude": 127.957845,
+   "kind": "REST_AREA",
+   "direction": "창원방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-54541beb0dfd",
+   "name": "충주휴게소(창원방향)",
+   "latitude": 37.022229,
+   "longitude": 127.837071,
+   "kind": "REST_AREA",
+   "direction": "창원방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-54749b1fa347",
+   "name": "홍천휴게소(양양방향)",
+   "latitude": 37.757369,
+   "longitude": 128.003099,
+   "kind": "REST_AREA",
+   "direction": "양양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-55df89d3b2e0",
+   "name": "금산인삼랜드휴게소(통영방향)",
+   "latitude": 36.152874,
+   "longitude": 127.495954,
+   "kind": "REST_AREA",
+   "direction": "통영방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-56837f3b0cca",
+   "name": "동해휴게소(삼척방향)",
+   "latitude": 37.601776,
+   "longitude": 129.073636,
+   "kind": "REST_AREA",
+   "direction": "삼척방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-5c873cd8ce3a",
+   "name": "현풍휴게소(창원방향)",
+   "latitude": 35.701783,
+   "longitude": 128.435359,
+   "kind": "REST_AREA",
+   "direction": "창원방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-5d2e0269e832",
+   "name": "죽암휴게소(서울방향)",
+   "latitude": 36.496775,
+   "longitude": 127.4306501,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-5e6de36a3e1e",
+   "name": "진영휴게소(순천방향)",
+   "latitude": 35.280059,
+   "longitude": 128.716044,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-5effb69ee9b4",
+   "name": "남성주참외휴게소(양평방향)",
+   "latitude": 35.858422,
+   "longitude": 128.319904,
+   "kind": "REST_AREA",
+   "direction": "양평방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-5f28d4c4ab6e",
+   "name": "진영휴게소(부산방향)",
+   "latitude": 35.2779101,
+   "longitude": 128.715388,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-5f66913411d0",
+   "name": "거창휴게소(광주방향)",
+   "latitude": 35.708862,
+   "longitude": 128.057962,
+   "kind": "REST_AREA",
+   "direction": "광주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-605fe81753e7",
+   "name": "횡성휴게소(인천방향)",
+   "latitude": 37.464983,
+   "longitude": 128.135449,
+   "kind": "REST_AREA",
+   "direction": "인천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-60b16837f514",
+   "name": "사천휴게소(부산방향)",
+   "latitude": 35.073173,
+   "longitude": 128.010802,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-60d607fcce8d",
+   "name": "안동휴게소(부산방향)",
+   "latitude": 36.553167,
+   "longitude": 128.641923,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-623ae6787b8d",
+   "name": "오수휴게소(순천방향)",
+   "latitude": 35.540925,
+   "longitude": 127.309267,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-627ae225db03",
+   "name": "문막휴게소(강릉방향)",
+   "latitude": 37.335469,
+   "longitude": 127.8582201,
+   "kind": "REST_AREA",
+   "direction": "강릉방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-62cb68e126ce",
+   "name": "춘향휴게소(완주방향)",
+   "latitude": 35.3376914,
+   "longitude": 127.3537495,
+   "kind": "REST_AREA",
+   "direction": "완주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-640570a56fd4",
+   "name": "부여백제휴게소(공주방향)",
+   "latitude": 36.258352,
+   "longitude": 126.8000701,
+   "kind": "REST_AREA",
+   "direction": "공주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-65c429424de8",
+   "name": "건천휴게소(서울방향)",
+   "latitude": 35.831894,
+   "longitude": 129.109244,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-669b33ec45a8",
+   "name": "치악휴게소(부산방향)",
+   "latitude": 37.253647,
+   "longitude": 128.048514,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-678eeb092442",
+   "name": "단양팔경휴게소(춘천방향)",
+   "latitude": 36.942903,
+   "longitude": 128.322142,
+   "kind": "REST_AREA",
+   "direction": "춘천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-67b3c251b42a",
+   "name": "매송휴게소(서울방향)",
+   "latitude": 37.264769,
+   "longitude": 126.891795,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-68c93957accf",
+   "name": "음성휴게소(하남방향)",
+   "latitude": 37.022065,
+   "longitude": 127.484315,
+   "kind": "REST_AREA",
+   "direction": "하남방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-6aed4d35447e",
+   "name": "단양팔경휴게소(부산방향)",
+   "latitude": 36.995459,
+   "longitude": 128.287616,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-6ca6c2cbd92f",
+   "name": "청통휴게소(대구방향)",
+   "latitude": 35.993928,
+   "longitude": 128.859145,
+   "kind": "REST_AREA",
+   "direction": "대구방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-6caff946df08",
+   "name": "보성녹차휴게소(영암방향)",
+   "latitude": 34.807313,
+   "longitude": 127.181003,
+   "kind": "REST_AREA",
+   "direction": "영암방향",
+   "address": "",
+   "facility": "간이휴게소"
+  },
+  {
+   "id": "ra-6efb0d7aecab",
+   "name": "덕유산휴게소(대전방향)",
+   "latitude": 35.816481,
+   "longitude": 127.646149,
+   "kind": "REST_AREA",
+   "direction": "대전방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-701f8d7de270",
+   "name": "남한강휴게소",
+   "latitude": 37.482835,
+   "longitude": 127.466735,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-71529607a792",
+   "name": "청송휴게소(영덕방향)",
+   "latitude": 36.455725,
+   "longitude": 129.0131901,
+   "kind": "REST_AREA",
+   "direction": "영덕방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-71ad1efa66c4",
+   "name": "서천휴게소(목포방향)",
+   "latitude": 36.129505,
+   "longitude": 126.626485,
+   "kind": "REST_AREA",
+   "direction": "목포방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-725464b10d84",
+   "name": "양산휴게소(서울방향)",
+   "latitude": 35.323172,
+   "longitude": 129.056867,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-738832806ff4",
+   "name": "횡성휴게소(강릉방향)",
+   "latitude": 37.462755,
+   "longitude": 128.133969,
+   "kind": "REST_AREA",
+   "direction": "강릉방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-74a730821bd7",
+   "name": "원주휴게소(춘천방향)",
+   "latitude": 37.434542,
+   "longitude": 127.931768,
+   "kind": "REST_AREA",
+   "direction": "춘천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-762cc19ffb70",
+   "name": "포항휴게소(포항방향)",
+   "latitude": 36.263313,
+   "longitude": 129.372051,
+   "kind": "REST_AREA",
+   "direction": "포항방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-773af1c6ef15",
+   "name": "함안휴게소(순천방향)",
+   "latitude": 35.294701,
+   "longitude": 128.344767,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-79f5d500003f",
+   "name": "산청휴게소(대전방향)",
+   "latitude": 35.333522,
+   "longitude": 127.938998,
+   "kind": "REST_AREA",
+   "direction": "대전방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-7b8bf74b1650",
+   "name": "추풍령휴게소(부산방향)",
+   "latitude": 36.200356,
+   "longitude": 128.000331,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-7e4e6fc55c49",
+   "name": "김천휴게소(서울방향)",
+   "latitude": 36.131107,
+   "longitude": 128.164009,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-7f36628bd415",
+   "name": "남성주참외휴게소(창원방향)",
+   "latitude": 35.869015,
+   "longitude": 128.316816,
+   "kind": "REST_AREA",
+   "direction": "창원방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-813b1b1e360e",
+   "name": "음성휴게소(남이방향)",
+   "latitude": 37.019638,
+   "longitude": 127.480712,
+   "kind": "REST_AREA",
+   "direction": "남이방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-8289675191e8",
+   "name": "정읍녹두장군휴게소(천안방향)",
+   "latitude": 35.599975,
+   "longitude": 126.864336,
+   "kind": "REST_AREA",
+   "direction": "천안방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-832e297cc24c",
+   "name": "금왕휴게소(평택방향)",
+   "latitude": 36.970655,
+   "longitude": 127.589499,
+   "kind": "REST_AREA",
+   "direction": "평택방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-836045705daa",
+   "name": "덕유산휴게소(통영방향)",
+   "latitude": 35.813428,
+   "longitude": 127.643173,
+   "kind": "REST_AREA",
+   "direction": "통영방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-8520d69e0111",
+   "name": "행담도휴게소",
+   "latitude": 36.944819,
+   "longitude": 126.807525,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-856e35af617d",
+   "name": "기흥휴게소(부산방향)",
+   "latitude": 37.235125,
+   "longitude": 127.104595,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-85dd64a3e258",
+   "name": "와촌휴게소(포항방향)",
+   "latitude": 35.951819,
+   "longitude": 128.775563,
+   "kind": "REST_AREA",
+   "direction": "포항방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-869d92949848",
+   "name": "산청휴게소(통영방향)",
+   "latitude": 35.333504,
+   "longitude": 127.937049,
+   "kind": "REST_AREA",
+   "direction": "통영방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-896eea5913b1",
+   "name": "덕평휴게소",
+   "latitude": 37.241456,
+   "longitude": 127.390189,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-89e7c5f7b265",
+   "name": "서여주휴게소(창원방향)",
+   "latitude": 37.279412,
+   "longitude": 127.578083,
+   "kind": "REST_AREA",
+   "direction": "창원방향",
+   "address": "",
+   "facility": "간이휴게소"
+  },
+  {
+   "id": "ra-89edfa414fac",
+   "name": "안성휴게소(부산방향)",
+   "latitude": 37.013407,
+   "longitude": 127.1448001,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-8bd663b838a9",
+   "name": "함안휴게소(부산방향)",
+   "latitude": 35.294068,
+   "longitude": 128.346957,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-8d6047cb2d37",
+   "name": "서산휴게소(서울방향)",
+   "latitude": 36.734194,
+   "longitude": 126.566302,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-8def1befd279",
+   "name": "괴산휴게소(양평방향)",
+   "latitude": 36.831894,
+   "longitude": 127.960141,
+   "kind": "REST_AREA",
+   "direction": "양평방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-8e17f1bc1c48",
+   "name": "정읍녹두장군휴게소(순천방향)",
+   "latitude": 35.601465,
+   "longitude": 126.862006,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-8fb309ff6003",
+   "name": "오창휴게소(하남방향)",
+   "latitude": 36.756581,
+   "longitude": 127.481909,
+   "kind": "REST_AREA",
+   "direction": "하남방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-90017d4c27db",
+   "name": "군산휴게소(목포방향)",
+   "latitude": 35.980591,
+   "longitude": 126.828971,
+   "kind": "REST_AREA",
+   "direction": "목포방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-919f430180d5",
+   "name": "내린천휴게소",
+   "latitude": 37.916535,
+   "longitude": 128.286377,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-91a93de9da48",
+   "name": "장흥정남진휴게소",
+   "latitude": 34.720894,
+   "longitude": 126.931319,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-91e5c195d9eb",
+   "name": "평택휴게소",
+   "latitude": 37.045585,
+   "longitude": 126.943774,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-9394e76680c8",
+   "name": "이천쌀휴게소(하남방향)",
+   "latitude": 37.293979,
+   "longitude": 127.378203,
+   "kind": "REST_AREA",
+   "direction": "하남방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-940223ef0711",
+   "name": "화성휴게소(서울방향)",
+   "latitude": 37.143497,
+   "longitude": 126.881289,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-9431cb2301bc",
+   "name": "여주휴게소(강릉방향)",
+   "latitude": 37.238022,
+   "longitude": 127.568892,
+   "kind": "REST_AREA",
+   "direction": "강릉방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-95b4100fdeb9",
+   "name": "안동휴게소(춘천방향)",
+   "latitude": 36.5534301,
+   "longitude": 128.645144,
+   "kind": "REST_AREA",
+   "direction": "춘천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-9627ddfb90af",
+   "name": "영천휴게소(포항방향)",
+   "latitude": 36.051451,
+   "longitude": 129.042544,
+   "kind": "REST_AREA",
+   "direction": "포항방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-98860bc6e515",
+   "name": "익산미륵사지휴게소(천안방향)",
+   "latitude": 36.048528,
+   "longitude": 127.104716,
+   "kind": "REST_AREA",
+   "direction": "천안방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-992f86fddc1c",
+   "name": "안성맞춤휴게소(평택방향)",
+   "latitude": 36.969915,
+   "longitude": 127.274619,
+   "kind": "REST_AREA",
+   "direction": "평택방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-9bbdcefdf3d6",
+   "name": "군위휴게소(춘천방향)",
+   "latitude": 36.266002,
+   "longitude": 128.576774,
+   "kind": "REST_AREA",
+   "direction": "춘천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-9be1c907e8b9",
+   "name": "부여백제휴게소(서천방향)",
+   "latitude": 36.258383,
+   "longitude": 126.796755,
+   "kind": "REST_AREA",
+   "direction": "서천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-9c3f245870f3",
+   "name": "구정휴게소(삼척방향)",
+   "latitude": 37.722214,
+   "longitude": 128.8511601,
+   "kind": "REST_AREA",
+   "direction": "삼척방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-9d0092dbc3d8",
+   "name": "오창휴게소(남이방향)",
+   "latitude": 36.758481,
+   "longitude": 127.481777,
+   "kind": "REST_AREA",
+   "direction": "남이방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-9d12f445fc24",
+   "name": "칠곡휴게소(서울방향)",
+   "latitude": 36.012005,
+   "longitude": 128.4308001,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-9d28f5d4c4d5",
+   "name": "성주휴게소(양평방향)",
+   "latitude": 36.0082601,
+   "longitude": 128.261541,
+   "kind": "REST_AREA",
+   "direction": "양평방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-9e277d257dd8",
+   "name": "죽암휴게소(부산방향)",
+   "latitude": 36.4868101,
+   "longitude": 127.429261,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-9fd37fa741a8",
+   "name": "영덕휴게소(영덕방향)",
+   "latitude": 36.280663,
+   "longitude": 129.3638379,
+   "kind": "REST_AREA",
+   "direction": "영덕방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-a23e8cd31d6e",
+   "name": "밀양영남루휴게소(함양방향)",
+   "latitude": 35.489732,
+   "longitude": 128.663321,
+   "kind": "REST_AREA",
+   "direction": "함양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-a430feef8085",
+   "name": "천등산휴게소(평택방향)",
+   "latitude": 37.076872,
+   "longitude": 127.989171,
+   "kind": "REST_AREA",
+   "direction": "평택방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-a5c228d71709",
+   "name": "문막휴게소(인천방향)",
+   "latitude": 37.297853,
+   "longitude": 127.817261,
+   "kind": "REST_AREA",
+   "direction": "인천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-a6f11af181fa",
+   "name": "청송휴게소(청주방향)",
+   "latitude": 36.456721,
+   "longitude": 129.012028,
+   "kind": "REST_AREA",
+   "direction": "청주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-a71aee3817a2",
+   "name": "용인휴게소(인천방향)",
+   "latitude": 37.248318,
+   "longitude": 127.238342,
+   "kind": "REST_AREA",
+   "direction": "인천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-a9177f1775c3",
+   "name": "지리산휴게소(대구방향)",
+   "latitude": 35.481353,
+   "longitude": 127.566804,
+   "kind": "REST_AREA",
+   "direction": "대구방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-aaee76f0cf72",
+   "name": "군산휴게소(서울방향)",
+   "latitude": 36.018831,
+   "longitude": 126.797698,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-abd7816a5006",
+   "name": "여주휴게소(인천방향)",
+   "latitude": 37.239739,
+   "longitude": 127.569949,
+   "kind": "REST_AREA",
+   "direction": "인천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-aca0bd27505f",
+   "name": "옥계휴게소(속초방향)",
+   "latitude": 37.616198,
+   "longitude": 129.060129,
+   "kind": "REST_AREA",
+   "direction": "속초방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-b3ec2570c4a8",
+   "name": "외동휴게소(부산방향)",
+   "latitude": 35.672753,
+   "longitude": 129.285277,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-b5db6372a861",
+   "name": "김천휴게소(부산방향)",
+   "latitude": 36.129252,
+   "longitude": 128.164782,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-b6d9286ad82b",
+   "name": "충주휴게소(양평방향)",
+   "latitude": 37.023175,
+   "longitude": 127.839297,
+   "kind": "REST_AREA",
+   "direction": "양평방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-b7aa86343337",
+   "name": "부안고려청자휴게소(목포방향)",
+   "latitude": 35.671628,
+   "longitude": 126.732073,
+   "kind": "REST_AREA",
+   "direction": "목포방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-b7dd8f06952d",
+   "name": "이서휴게소(천안방향)",
+   "latitude": 35.801932,
+   "longitude": 127.025759,
+   "kind": "REST_AREA",
+   "direction": "천안방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-b9f931066efc",
+   "name": "천등산휴게소(제천방향)",
+   "latitude": 37.061597,
+   "longitude": 127.939378,
+   "kind": "REST_AREA",
+   "direction": "제천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-baa7a609bb27",
+   "name": "황전휴게소(순천방향)",
+   "latitude": 35.148905,
+   "longitude": 127.454145,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-bab606a0b293",
+   "name": "서부산휴게소(순천방향)",
+   "latitude": 35.157197,
+   "longitude": 128.948638,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-bb6bfea55b83",
+   "name": "섬진강휴게소(순천방향)",
+   "latitude": 34.985669,
+   "longitude": 127.769329,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-bc193eaa8a2c",
+   "name": "군위휴게소(부산방향)",
+   "latitude": 36.266556,
+   "longitude": 128.574852,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-bcef13130c2c",
+   "name": "주암휴게소(순천방향)",
+   "latitude": 35.076197,
+   "longitude": 127.2641001,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-bd53c3d99823",
+   "name": "문산휴게소(순천방향)",
+   "latitude": 35.171374,
+   "longitude": 128.151591,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-c0115ed5ca81",
+   "name": "익산미륵사지휴게소(순천방향)",
+   "latitude": 36.048555,
+   "longitude": 127.102333,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-c0d924652c9a",
+   "name": "밀양영남루휴게소(울산방향)",
+   "latitude": 35.492884,
+   "longitude": 128.664121,
+   "kind": "REST_AREA",
+   "direction": "울산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-c13056f13fc1",
+   "name": "공주휴게소(대전방향)",
+   "latitude": 36.496946,
+   "longitude": 127.1666701,
+   "kind": "REST_AREA",
+   "direction": "대전방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-c2bdb77f48df",
+   "name": "옥천휴게소(서울방향)",
+   "latitude": 36.297616,
+   "longitude": 127.598777,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-c406a756856b",
+   "name": "강릉휴게소(인천방향)",
+   "latitude": 37.760275,
+   "longitude": 128.8053601,
+   "kind": "REST_AREA",
+   "direction": "인천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-c5052448cf32",
+   "name": "구정휴게소(속초방향)",
+   "latitude": 37.723012,
+   "longitude": 128.854228,
+   "kind": "REST_AREA",
+   "direction": "속초방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-c67590374745",
+   "name": "의성휴게소(영덕방향)",
+   "latitude": 36.409501,
+   "longitude": 128.447699,
+   "kind": "REST_AREA",
+   "direction": "영덕방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-c8b38e7f5dde",
+   "name": "천안삼거리휴게소(서울방향)",
+   "latitude": 36.787809,
+   "longitude": 127.173455,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-c994395e3836",
+   "name": "동명휴게소(춘천방향)",
+   "latitude": 36.006426,
+   "longitude": 128.5493901,
+   "kind": "REST_AREA",
+   "direction": "춘천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-c9ce9f2d6a37",
+   "name": "고삼호수휴게소",
+   "latitude": 37.077091,
+   "longitude": 127.2945283,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-d20c9f55f9cb",
+   "name": "논공휴게소(광주방향)",
+   "latitude": 35.767421,
+   "longitude": 128.403493,
+   "kind": "REST_AREA",
+   "direction": "광주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-d249cf876a9f",
+   "name": "함평나비휴게소(광주방향)",
+   "latitude": 35.037283,
+   "longitude": 126.511676,
+   "kind": "REST_AREA",
+   "direction": "광주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-d250f1c247b7",
+   "name": "강천산휴게소(대구방향)",
+   "latitude": 35.364369,
+   "longitude": 127.104757,
+   "kind": "REST_AREA",
+   "direction": "대구방향",
+   "address": "",
+   "facility": "간이휴게소"
+  },
+  {
+   "id": "ra-d26d8cc1a6fa",
+   "name": "입장거봉포도휴게소(서울방향)",
+   "latitude": 36.942997,
+   "longitude": 127.192467,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-d2b9329ea10f",
+   "name": "평창휴게소(강릉방향)",
+   "latitude": 37.6055701,
+   "longitude": 128.452681,
+   "kind": "REST_AREA",
+   "direction": "강릉방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-d4990747548f",
+   "name": "옥천휴게소(부산방향)",
+   "latitude": 36.296863,
+   "longitude": 127.595223,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-d6cdbe973855",
+   "name": "홍성휴게소(목포방향)",
+   "latitude": 36.552584,
+   "longitude": 126.579514,
+   "kind": "REST_AREA",
+   "direction": "목포방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-d75214b67f99",
+   "name": "함양휴게소(통영방향)",
+   "latitude": 35.551322,
+   "longitude": 127.758563,
+   "kind": "REST_AREA",
+   "direction": "통영방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-d76fccfdef02",
+   "name": "홍천휴게소(서울방향)",
+   "latitude": 37.758898,
+   "longitude": 128.0065801,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-dba8b03b5088",
+   "name": "황간휴게소(서울방향)",
+   "latitude": 36.249437,
+   "longitude": 127.854835,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-dd2fb590b9b7",
+   "name": "논공휴게소(대구방향)",
+   "latitude": 35.764989,
+   "longitude": 128.402909,
+   "kind": "REST_AREA",
+   "direction": "대구방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e0642d531d53",
+   "name": "벌곡휴게소(논산방향)",
+   "latitude": 36.217974,
+   "longitude": 127.273468,
+   "kind": "REST_AREA",
+   "direction": "논산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e1077847d392",
+   "name": "경주휴게소(부산방향)",
+   "latitude": 35.724761,
+   "longitude": 129.1929501,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-e2290ab08374",
+   "name": "울주휴게소(울산방향)",
+   "latitude": 35.510821,
+   "longitude": 129.130435,
+   "kind": "REST_AREA",
+   "direction": "울산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e25d56365c76",
+   "name": "영산휴게소(창원방향)",
+   "latitude": 35.429794,
+   "longitude": 128.495915,
+   "kind": "REST_AREA",
+   "direction": "창원방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e273d3dc8711",
+   "name": "장유휴게소(서부산방향)",
+   "latitude": 35.212074,
+   "longitude": 128.7935801,
+   "kind": "REST_AREA",
+   "direction": "서부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e2a7bbfde2fb",
+   "name": "영천휴게소(대구방향)",
+   "latitude": 36.053254,
+   "longitude": 129.044422,
+   "kind": "REST_AREA",
+   "direction": "대구방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-e53ddf8b67ea",
+   "name": "속리산휴게소(청주방향)",
+   "latitude": 36.447804,
+   "longitude": 127.869061,
+   "kind": "REST_AREA",
+   "direction": "청주방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e66863cd5774",
+   "name": "망향휴게소(부산방향)",
+   "latitude": 36.8556501,
+   "longitude": 127.180929,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e6e274e3c1f4",
+   "name": "함평천지휴게소(서울방향)",
+   "latitude": 35.130746,
+   "longitude": 126.482295,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e6ee1aa2cd69",
+   "name": "춘향휴게소(순천방향)",
+   "latitude": 35.3367566,
+   "longitude": 127.3515503,
+   "kind": "REST_AREA",
+   "direction": "순천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e73a864a3122",
+   "name": "홍천강휴게소(춘천방향)",
+   "latitude": 37.712386,
+   "longitude": 127.827719,
+   "kind": "REST_AREA",
+   "direction": "춘천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e7ad2b2b63d2",
+   "name": "칠곡휴게소(부산방향)",
+   "latitude": 36.019795,
+   "longitude": 128.428517,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-e8aa8d8c58b3",
+   "name": "진안마이산휴게소(익산방향)",
+   "latitude": 35.777898,
+   "longitude": 127.425279,
+   "kind": "REST_AREA",
+   "direction": "익산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e8f4a2331db1",
+   "name": "안성맞춤휴게소(제천방향)",
+   "latitude": 36.968057,
+   "longitude": 127.274261,
+   "kind": "REST_AREA",
+   "direction": "제천방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-e90a4335a476",
+   "name": "황간휴게소(부산방향)",
+   "latitude": 36.248899,
+   "longitude": 127.8526701,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-ed4184545c34",
+   "name": "선산휴게소(창원방향)",
+   "latitude": 36.274223,
+   "longitude": 128.250745,
+   "kind": "REST_AREA",
+   "direction": "창원방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-edfa886532de",
+   "name": "강릉휴게소(강릉방향)",
+   "latitude": 37.758206,
+   "longitude": 128.806648,
+   "kind": "REST_AREA",
+   "direction": "강릉방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-effa75778233",
+   "name": "김해금관가야휴게소",
+   "latitude": 35.269933,
+   "longitude": 129.003134,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-f14dae95e880",
+   "name": "안성휴게소(서울방향)",
+   "latitude": 37.076681,
+   "longitude": 127.132496,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-f1a561bdb14c",
+   "name": "함평천지휴게소(목포방향)",
+   "latitude": 35.069687,
+   "longitude": 126.478247,
+   "kind": "REST_AREA",
+   "direction": "목포방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-f1afbddf138f",
+   "name": "서여주휴게소(양평방향)",
+   "latitude": 37.278607,
+   "longitude": 127.580501,
+   "kind": "REST_AREA",
+   "direction": "양평방향",
+   "address": "",
+   "facility": "간이휴게소"
+  },
+  {
+   "id": "ra-f54626c1b6fc",
+   "name": "서천휴게소(서울방향)",
+   "latitude": 36.131929,
+   "longitude": 126.627834,
+   "kind": "REST_AREA",
+   "direction": "서울방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-f65d634c56d3",
+   "name": "공주휴게소(당진방향)",
+   "latitude": 36.498679,
+   "longitude": 127.164921,
+   "kind": "REST_AREA",
+   "direction": "당진방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-f6c414e0db84",
+   "name": "천안호두휴게소(부산방향)",
+   "latitude": 36.730226,
+   "longitude": 127.263879,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-f741b6258947",
+   "name": "하남드림휴게소",
+   "latitude": 37.530281,
+   "longitude": 127.206084,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-f794a8b8a404",
+   "name": "마장휴게소",
+   "latitude": 37.263849,
+   "longitude": 127.407043,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-f7bae99e40f3",
+   "name": "시흥하늘휴게소",
+   "latitude": 37.383794,
+   "longitude": 126.855452,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-fbf4caff64fe",
+   "name": "이천휴게소(남이방향)",
+   "latitude": 37.264574,
+   "longitude": 127.403687,
+   "kind": "REST_AREA",
+   "direction": "남이방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-fe44f7849061",
+   "name": "문경휴게소(양평방향)",
+   "latitude": 36.621068,
+   "longitude": 128.1523901,
+   "kind": "REST_AREA",
+   "direction": "양평방향",
+   "address": "",
+   "facility": "화물차휴게소"
+  },
+  {
+   "id": "ra-fe4adac025b2",
+   "name": "선산휴게소(양평방향)",
+   "latitude": 36.277941,
+   "longitude": 128.249296,
+   "kind": "REST_AREA",
+   "direction": "양평방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-fe908b196c4c",
+   "name": "함양휴게소(대전방향)",
+   "latitude": 35.551611,
+   "longitude": 127.7604201,
+   "kind": "REST_AREA",
+   "direction": "대전방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-ff9f5273400d",
+   "name": "안산휴게소",
+   "latitude": 37.351075,
+   "longitude": 126.818799,
+   "kind": "REST_AREA",
+   "direction": "양방향",
+   "address": "",
+   "facility": "일반휴게소"
+  },
+  {
+   "id": "ra-fff724e75214",
+   "name": "동명휴게소(부산방향)",
+   "latitude": 36.0069901,
+   "longitude": 128.546504,
+   "kind": "REST_AREA",
+   "direction": "부산방향",
+   "address": "",
+   "facility": "일반휴게소"
+  }
+ ]
+}

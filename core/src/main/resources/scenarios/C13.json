@@ -1,0 +1,17 @@
+{
+  "id": "C13",
+  "title": "심야 + 수면 부족",
+  "startLocal": "2026-11-20T01:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0, "summary": {"sleepMinutes": 290}}},
+    {"t": "-00:00:55", "expect": {"voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "괜찮아"}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "01:00:00", "expect": {"state": "NORMAL", "voices": ["V03"]}},
+    {"t": "01:00:10", "in": {"checkinText": "괜찮아"}},
+    {"t": "01:15:00", "expect": {"state": "CAUTION", "reasons": ["FATIGUE"], "voices": ["V02", "V03"]}},
+    {"t": "01:15:10", "in": {"checkinText": "괜찮아"}},
+    {"t": "01:30:00", "expect": {"state": "STOP", "reasons": ["FATIGUE"], "voices": ["V04"], "voiceVars": [{"voice": "V04", "advance": "SLEEP_SHORT"}]}}
+  ]
+}

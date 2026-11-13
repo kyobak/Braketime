@@ -1,0 +1,13 @@
+{
+  "id": "C9",
+  "title": "23:30 출발 자정 넘김",
+  "startLocal": "2026-11-20T23:30:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "-00:00:55", "expect": {"voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "괜찮아"}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "01:00:00", "expect": {"state": "NORMAL", "voices": ["V03"]}}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-11-20T08:12:00+09:00",
+  "valid_until": "2026-11-20T08:27:00+09:00",
+  "sleep_minutes_last_night": null,
+  "sleep_short": null,
+  "sleep_valid_until": null,
+  "glucose_mmol": null,
+  "glucose_trend": null,
+  "glucose_source": null,
+  "glucose_measured_at": null
+}

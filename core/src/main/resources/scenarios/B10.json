@@ -1,0 +1,12 @@
+{
+  "id": "B10",
+  "title": "V01 듣는 중 출발",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:00:10", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "-00:00:05", "expect": {"state": "NORMAL", "voices": ["V01"]}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}, "expect": {"state": "NORMAL"}},
+    {"t": "00:00:02", "in": {"checkinText": "좀 피곤해"}, "expect": {"state": "CAUTION", "reasons": ["CHECKIN"], "voices": ["V31"]}}
+  ]
+}

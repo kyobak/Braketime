@@ -1,0 +1,21 @@
+{
+  "id": "sc2",
+  "title": "SC2 기기 없는 피로 관리",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "-00:00:55", "expect": {"voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "괜찮아"}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "01:45:00", "expect": {"state": "CAUTION", "reasons": ["FATIGUE"], "cdsSec": 6300, "voices": ["V02", "V03"], "voiceVars": [{"voice": "V02", "driveSec": 6300}]}},
+    {"t": "01:45:10", "in": {"checkinText": "괜찮아"}, "expect": {"state": "CAUTION", "reasons": ["FATIGUE"]}},
+    {"t": "02:00:00", "expect": {"state": "STOP", "reasons": ["FATIGUE"], "cdsSec": 7200, "voices": ["V04"], "voiceVars": [{"voice": "V04", "driveSec": 7200}]}},
+    {"t": "02:00:10", "in": {"promptText": "아니"}, "expect": {"state": "STOP", "ignored": 1, "ventilationOffer": true}},
+    {"t": "02:10:10", "expect": {"state": "STOP", "voices": ["V04"], "voiceVars": [{"voice": "V04", "driveSec": 7810}], "ignored": 1}},
+    {"t": "02:10:20", "in": {"promptText": "응"}, "expect": {"state": "STOP", "voices": ["V29"], "ignored": 1, "guidanceAuto": false}},
+    {"t": "02:16:00", "in": {"gear": "PARK", "speedKmh": 0}, "expect": {"state": "RECOVER", "reasons": ["FATIGUE"], "voices": ["V11"], "voiceVars": [{"voice": "V11", "remainingSec": 900}]}},
+    {"t": "02:30:59", "expect": {"state": "RECOVER", "reasons": ["FATIGUE"]}},
+    {"t": "02:31:00", "expect": {"state": "NORMAL", "reasons": [], "cdsSec": 0, "voices": ["V12"], "ignored": 0}}
+  ]
+}

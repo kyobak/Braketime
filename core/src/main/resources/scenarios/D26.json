@@ -1,0 +1,11 @@
+{
+  "id": "D26",
+  "title": "첫 요약 지연",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "00:00:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "00:00:05", "expect": {"state": "NORMAL", "voices": ["V01"]}},
+    {"t": "00:00:08", "in": {"summary": {"glucoseMmol": 3.8, "source": "simulated", "trend": "FLAT"}}, "expect": {"state": "RECOVER", "reasons": ["GLUCOSE"], "voices": ["V17"], "hold": true}}
+  ]
+}

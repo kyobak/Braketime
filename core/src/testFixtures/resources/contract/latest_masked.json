@@ -1,0 +1,17 @@
+{
+  "paired": true,
+  "phone_name": "Galaxy S25",
+  "server_time": "2026-11-20T00:13:05Z",
+  "received_at": "2026-11-19T23:12:01Z",
+  "summary": {
+    "generated_at": "2026-11-20T08:12:00+09:00",
+    "valid_until": "2026-11-20T08:26:30+09:00",
+    "sleep_minutes_last_night": 290,
+    "sleep_short": true,
+    "sleep_valid_until": "2026-11-21T04:00:00+09:00",
+    "glucose_mmol": null,
+    "glucose_trend": null,
+    "glucose_source": null,
+    "glucose_measured_at": null
+  }
+}

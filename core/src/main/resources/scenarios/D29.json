@@ -1,0 +1,18 @@
+{
+  "id": "D29",
+  "title": "S5 보류 풀기 거부: 주행 중, 유효한 낮은 값",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": true,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0, "summary": {"glucoseMmol": 6.4, "source": "simulated", "trend": "FLAT"}}},
+    {"t": "-00:00:55", "expect": {"voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "괜찮아"}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "00:30:00", "in": {"glucoseCut": true}, "expect": {"state": "NORMAL", "reasons": []}},
+    {"t": "00:44:00", "expect": {"state": "NORMAL", "reasons": [], "voices": ["V19"]}},
+    {"t": "00:45:00", "in": {"glucoseHoldRelease": true}, "expect": {"state": "NORMAL", "reasons": [], "events": []}},
+    {"t": "00:46:00", "in": {"gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL", "reasons": [], "holdReleasable": true}},
+    {"t": "00:47:00", "in": {"summary": {"glucoseMmol": 3.6, "source": "simulated", "trend": "FALLING"}}, "expect": {"state": "RECOVER", "reasons": ["GLUCOSE"], "voices": ["V14"], "holdReleasable": false}},
+    {"t": "00:48:00", "in": {"glucoseHoldRelease": true}, "expect": {"state": "RECOVER", "reasons": ["GLUCOSE"], "events": []}}
+  ]
+}

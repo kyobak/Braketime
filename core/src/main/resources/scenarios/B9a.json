@@ -1,0 +1,15 @@
+{
+  "id": "B9a",
+  "title": "04:00 전 시동은 전날",
+  "startLocal": "2026-11-20T04:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-19:00:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}},
+    {"t": "-18:59:55", "expect": {"voices": ["V01"]}},
+    {"t": "-18:59:50", "in": {"checkinText": "괜찮아"}},
+    {"t": "-18:59:40", "in": {"ignition": "OFF", "gear": "PARK", "speedKmh": 0}},
+    {"t": "-00:00:01", "in": {"ignition": "ON"}, "expect": {"state": "NORMAL"}},
+    {"t": "00:00:04", "expect": {"state": "NORMAL"}},
+    {"t": "00:00:10", "expect": {"state": "NORMAL"}}
+  ]
+}

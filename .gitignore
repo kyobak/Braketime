@@ -1,0 +1,35 @@
+# 빌드 산출물
+build/
+.gradle/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# 기기별 설정과 비밀 값. apk/는 제출물이라 제외하지 않는다
+local.properties
+keystore.properties
+*.keystore
+*.jks
+*.pem
+*.key
+*.p12
+.env
+.env.*
+
+# 서버 SQLite
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# 도구와 녹화
+.idea/
+*.iml
+.DS_Store
+.vc/
+*.h264
+
+# 공모전 접수양식·동의서(개인정보와 서명이 들어간다). 저장소에 올리지 않는다
+/제출서류/

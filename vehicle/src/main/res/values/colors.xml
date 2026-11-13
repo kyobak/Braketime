@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compose가 그리기 전 창 배경. CdTheme의 bg와 같은 값이라야 전환 때 번쩍이지 않는다 -->
+    <color name="window_bg">#FFFFFF</color>
+</resources>

@@ -1,0 +1,13 @@
+{
+  "id": "C4",
+  "title": "수면 359는 앞당김",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0, "summary": {"sleepMinutes": 359}}},
+    {"t": "-00:00:55", "expect": {"voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "괜찮아"}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "00:00:01", "expect": {"cautionSec": 4500, "stopSec": 5400, "advanced": "SLEEP_SHORT"}}
+  ]
+}

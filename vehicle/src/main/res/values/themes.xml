@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 애니메이션 속성이 하나도 없는 스타일. Activity 사이 이동도 즉시 교체한다(design-tokens 4장) -->
+    <style name="NoWindowAnimation"/>
+
+    <!-- 화면은 Compose가 전부 그린다. 시스템 액션바가 끼어들지 않게 한다 -->
+    <style name="Theme.ConditionDrive" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/window_bg</item>
+        <item name="android:windowAnimationStyle">@style/NoWindowAnimation</item>
+    </style>
+</resources>

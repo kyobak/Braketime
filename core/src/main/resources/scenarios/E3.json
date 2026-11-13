@@ -1,0 +1,17 @@
+{
+  "id": "E3",
+  "title": "TTS, STT 실패",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "-00:00:55", "expect": {"state": "NORMAL", "voices": ["V01"]}},
+    {"t": "-00:00:47", "in": {"checkinText": ""}, "expect": {"state": "NORMAL", "reasons": []}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "01:45:00", "expect": {"state": "CAUTION", "reasons": ["FATIGUE"], "voices": ["V02", "V03"]}},
+    {"t": "01:45:08", "in": {"checkinText": ""}, "expect": {"state": "CAUTION", "reasons": ["FATIGUE"]}},
+    {"t": "02:00:00", "expect": {"state": "STOP", "reasons": ["FATIGUE"], "voices": ["V04"], "ignored": 0}},
+    {"t": "02:00:08", "in": {"promptText": ""}, "expect": {"state": "STOP", "ignored": 0}},
+    {"t": "02:10:08", "expect": {"state": "STOP", "voices": ["V04"], "ignored": 0}}
+  ]
+}

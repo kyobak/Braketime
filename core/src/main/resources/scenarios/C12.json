@@ -1,0 +1,22 @@
+{
+  "id": "C12",
+  "title": "심야 체크인, STOP이면 건너뜀",
+  "startLocal": "2026-11-20T01:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "-00:00:55", "expect": {"state": "NORMAL", "voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "좀 피곤해"}, "expect": {"state": "CAUTION", "reasons": ["CHECKIN"], "voices": ["V31"]}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "00:30:00", "expect": {"voices": ["V03"]}},
+    {"t": "00:30:10", "in": {"checkinText": "졸려"}, "expect": {"state": "STOP", "reasons": ["CHECKIN"], "voices": ["V06"]}},
+    {"t": "00:30:20", "in": {"promptText": "아니"}},
+    {"t": "00:40:20", "expect": {"voices": ["V06"]}},
+    {"t": "00:40:28", "in": {"promptText": ""}},
+    {"t": "00:50:28", "expect": {"voices": ["V06"]}},
+    {"t": "00:50:36", "in": {"promptText": ""}},
+    {"t": "01:00:00", "expect": {"state": "STOP", "reasons": ["CHECKIN"]}},
+    {"t": "01:00:35", "expect": {"state": "STOP", "reasons": ["CHECKIN"]}},
+    {"t": "01:00:36", "expect": {"state": "STOP", "reasons": ["CHECKIN"], "voices": ["V06"]}}
+  ]
+}

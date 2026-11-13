@@ -1,0 +1,14 @@
+{
+  "id": "E4",
+  "title": "서버 다운 시동",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "00:00:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "00:00:03", "expect": {"state": "NORMAL"}},
+    {"t": "00:00:05", "expect": {"state": "NORMAL", "voices": ["V01"]}},
+    {"t": "00:00:13", "in": {"checkinText": ""}, "expect": {"state": "NORMAL"}},
+    {"t": "00:01:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "01:46:00", "expect": {"state": "CAUTION", "reasons": ["FATIGUE"], "cdsSec": 6300, "voices": ["V02", "V03"]}}
+  ]
+}

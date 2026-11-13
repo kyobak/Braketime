@@ -1,0 +1,15 @@
+{
+  "id": "B1",
+  "title": "피곤 1회",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "-00:00:55", "expect": {"state": "NORMAL", "voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "좀 피곤해"}, "expect": {"state": "CAUTION", "reasons": ["CHECKIN"], "voices": ["V31"], "streak": 1}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}, "expect": {"state": "CAUTION", "reasons": ["CHECKIN"]}},
+    {"t": "00:29:59", "expect": {"state": "CAUTION", "reasons": ["CHECKIN"]}},
+    {"t": "00:30:00", "expect": {"state": "CAUTION", "reasons": ["CHECKIN"], "voices": ["V03"]}},
+    {"t": "00:30:10", "in": {"checkinText": "괜찮아"}, "expect": {"state": "NORMAL", "reasons": [], "streak": 0}}
+  ]
+}

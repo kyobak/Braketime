@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+      # 설계서 2장 의존 규칙은 각 모듈의 check에 걸려 있다
+      - run: >
+          ./gradlew
+          :core:check :server:build
+          :vehicle:check :companion:check
+          :vehicle:assembleDebug :companion:assembleDebug
+          :vehicle:assembleRelease

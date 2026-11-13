@@ -1,0 +1,12 @@
+{
+  "id": "B3",
+  "title": "분류 실패 후 보통",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "-00:00:55", "expect": {"state": "NORMAL", "voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "음"}, "expect": {"state": "NORMAL", "voices": ["V21"]}},
+    {"t": "-00:00:45", "in": {"checkinText": "글쎄"}, "expect": {"state": "NORMAL", "reasons": []}}
+  ]
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- AAOS 표준 차량 속성 -->
+    <uses-permission android:name="android.car.permission.CAR_SPEED"/>
+    <uses-permission android:name="android.car.permission.CAR_POWERTRAIN"/>
+
+    <!-- Pleos SDK. 이름은 공식 문서의 declaring-permissions, vehicle-permission 페이지 기준 -->
+    <uses-permission android:name="pleos.car.permission.TTS_SERVICE"/>
+    <uses-permission android:name="pleos.car.permission.STT_SERVICE"/>
+    <uses-permission android:name="pleos.car.permission.FUSED_LOCATION"/>
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE"/>
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE_SEARCH"/>
+    <uses-permission android:name="pleos.car.permission.NAVI_CUSTOM_MAP"/>
+    <uses-permission android:name="pleos.car.permission.CAR_DRIVE"/>
+    <uses-permission android:name="pleos.car.permission.CAR_CLIMATE"/>
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_CLIMATE"/>
+    <uses-permission android:name="pleos.car.permission.CAR_SEATS"/>
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- SDK 실패 시 대체 경로(10.2) -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.ConditionDrive">
+
+        <uses-library android:name="android.car" android:required="false"/>
+
+        <!-- CCP(로터리) 미지원 선언(U-27). 사용자 설치 앱은 선택이고, 정차 화면의 필수 조작은 모두 터치로 끝나며 주행 화면은 조작이 없다 -->
+        <meta-data android:name="com.hmg.rotary.ROTARY_SUPPORTED" android:value="false"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|density|uiMode"
+            android:exported="true">
+            <!-- 방향을 고정하지 않는다. 고정하면 세로 창에서 레터박스돼 창 아래가 비고 기록 탭이 잘린다(U-17, 폼 팩터 테스트) -->
+            <meta-data android:name="distractionOptimized" android:value="true"/>
+            <!-- 필터가 없으면 앱 목록에서 실행할 수 없다 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SetupActivity" android:exported="false"/>
+
+        <service
+            android:name=".service.DriveMonitorService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="driver_rest_reminder"/>
+        </service>
+
+        <receiver android:name=".service.BootReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

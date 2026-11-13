@@ -1,0 +1,18 @@
+{
+  "id": "A20",
+  "title": "수락 후 미정차",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "-00:00:55", "expect": {"voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "괜찮아"}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "01:45:00", "expect": {"state": "CAUTION", "reasons": ["FATIGUE"], "cdsSec": 6300, "voices": ["V02", "V03"], "voiceVars": [{"voice": "V02", "driveSec": 6300}]}},
+    {"t": "01:45:20", "in": {"checkinText": "괜찮아"}, "expect": {"state": "CAUTION", "reasons": ["FATIGUE"]}},
+    {"t": "02:00:00", "expect": {"state": "STOP", "reasons": ["FATIGUE"], "cdsSec": 7200, "voices": ["V04"], "voiceVars": [{"voice": "V04", "driveSec": 7200}], "ignored": 0}},
+    {"t": "02:00:10", "in": {"promptText": "응"}, "expect": {"state": "STOP", "voices": ["V29"], "ignored": 0, "guidanceAuto": false}},
+    {"t": "02:20:09", "expect": {"state": "STOP", "ignored": 0}},
+    {"t": "02:20:10", "expect": {"state": "STOP", "voices": ["V04"], "voiceVars": [{"voice": "V04", "driveSec": 8410}], "ignored": 0}}
+  ]
+}

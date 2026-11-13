@@ -1,0 +1,18 @@
+{
+  "id": "B2",
+  "title": "피곤 2회",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "-00:00:55", "expect": {"state": "NORMAL", "voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "피곤해"}, "expect": {"state": "CAUTION", "reasons": ["CHECKIN"], "voices": ["V31"]}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}, "expect": {"state": "CAUTION", "reasons": ["CHECKIN"]}},
+    {"t": "00:30:00", "expect": {"state": "CAUTION", "reasons": ["CHECKIN"], "voices": ["V03"]}},
+    {"t": "00:30:10", "in": {"checkinText": "졸려"}, "expect": {"state": "STOP", "reasons": ["CHECKIN"], "voices": ["V06"], "streak": 2}},
+    {"t": "00:30:20", "in": {"promptText": "응"}, "expect": {"state": "STOP", "reasons": ["CHECKIN"], "voices": ["V29"]}},
+    {"t": "00:38:00", "in": {"gear": "PARK", "speedKmh": 0}, "expect": {"state": "RECOVER", "reasons": ["CHECKIN"], "voices": ["V11"]}},
+    {"t": "00:53:00", "expect": {"state": "RECOVER", "reasons": ["CHECKIN"], "cdsSec": 0, "voices": ["V03"]}},
+    {"t": "00:53:10", "in": {"checkinText": "좋아"}, "expect": {"state": "NORMAL", "reasons": [], "voices": ["V12"]}}
+  ]
+}

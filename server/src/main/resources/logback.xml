@@ -1,0 +1,14 @@
+<configuration>
+  <!-- 12.17: 라이브러리 예외 메시지에 입력이 섞일 수 있어 스택과 메시지를 찍지 않는다(%nopex). 라이브러리 로거도 WARN 위만 남긴다 -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSS'Z',UTC} %level %msg%n%nopex</pattern>
+    </encoder>
+  </appender>
+  <logger name="io.ktor" level="WARN"/>
+  <logger name="io.netty" level="WARN"/>
+  <logger name="org.sqlite" level="WARN"/>
+  <root level="INFO">
+    <appender-ref ref="STDOUT"/>
+  </root>
+</configuration>

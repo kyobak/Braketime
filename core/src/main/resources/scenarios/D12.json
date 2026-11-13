@@ -1,0 +1,25 @@
+{
+  "id": "D12",
+  "title": "래치 + 피로",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": true,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0, "summary": {"glucoseMmol": 6.4, "source": "simulated", "trend": "FLAT"}}},
+    {"t": "-00:00:55", "expect": {"voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "괜찮아"}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "01:45:00", "expect": {"state": "CAUTION", "reasons": ["FATIGUE"], "cdsSec": 6300, "voices": ["V02", "V03"], "voiceVars": [{"voice": "V02", "driveSec": 6300}]}},
+    {"t": "01:45:20", "in": {"checkinText": "괜찮아"}, "expect": {"state": "CAUTION", "reasons": ["FATIGUE"]}},
+    {"t": "01:50:00", "in": {"summary": {"glucoseMmol": 3.9, "source": "simulated", "trend": "FLAT"}}, "expect": {"state": "STOP", "reasons": ["FATIGUE", "GLUCOSE"], "voices": ["V09"]}},
+    {"t": "01:50:30", "in": {"glucoseCut": true}},
+    {"t": "01:52:00", "expect": {"voices": ["V10"]}},
+    {"t": "01:54:00", "expect": {"voices": ["V10"]}},
+    {"t": "01:56:00", "expect": {"voices": ["V10"]}},
+    {"t": "01:58:00", "expect": {"voices": ["V10"]}},
+    {"t": "02:00:00", "expect": {"state": "STOP", "reasons": ["FATIGUE", "GLUCOSE"], "voices": ["V10"]}},
+    {"t": "02:02:00", "expect": {"voices": ["V10"]}},
+    {"t": "02:03:00", "in": {"gear": "PARK", "speedKmh": 0}, "expect": {"state": "RECOVER", "reasons": ["FATIGUE", "GLUCOSE"], "voices": ["V14"]}},
+    {"t": "02:05:00", "expect": {"state": "RECOVER", "reasons": ["FATIGUE", "GLUCOSE_UNCONFIRMED"], "voices": ["V19R"]}},
+    {"t": "02:18:00", "expect": {"state": "CAUTION", "reasons": ["GLUCOSE_UNCONFIRMED"], "cdsSec": 0, "voices": ["V19R"]}}
+  ]
+}

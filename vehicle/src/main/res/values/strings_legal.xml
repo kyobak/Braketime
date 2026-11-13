@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 고지문 전용. 6.4 의료 금칙어 예외이고 상표 금지는 그대로 적용된다 -->
+    <string name="o1_body">대답은 안 해도 돼요. 진단이나 치료가 아니고 운전을 막지 않아요.</string>
+    <string name="legal_not_official">제조사 공식 앱이 아니에요</string>
+</resources>

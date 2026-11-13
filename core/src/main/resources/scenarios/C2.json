@@ -1,0 +1,14 @@
+{
+  "id": "C2",
+  "title": "운전 중 수면 수신",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": false,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0}, "expect": {"state": "NORMAL"}},
+    {"t": "-00:00:55", "expect": {"voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "괜찮아"}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "01:39:59", "expect": {"state": "NORMAL"}},
+    {"t": "01:40:00", "in": {"summary": {"sleepMinutes": 290}}, "expect": {"state": "STOP", "reasons": ["FATIGUE"], "voices": ["V04"], "voiceVars": [{"voice": "V04", "driveSec": 6000, "advance": "SLEEP_SHORT"}]}}
+  ]
+}

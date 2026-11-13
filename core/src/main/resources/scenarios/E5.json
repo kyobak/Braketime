@@ -1,0 +1,21 @@
+{
+  "id": "E5",
+  "title": "주행 중 서버 종료",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": true,
+  "steps": [
+    {"t": "-00:01:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0, "summary": {"glucoseMmol": 6.4, "source": "simulated", "trend": "FLAT"}}},
+    {"t": "-00:00:55", "expect": {"voices": ["V01"]}},
+    {"t": "-00:00:50", "in": {"checkinText": "괜찮아"}},
+    {"t": "00:00:00", "in": {"gear": "DRIVE", "speedKmh": 80}},
+    {"t": "01:00:00", "in": {"summary": {"glucoseMmol": 6.4, "source": "simulated", "trend": "FLAT"}, "glucoseCut": true}, "expect": {"state": "NORMAL"}},
+    {"t": "01:15:00", "expect": {"state": "NORMAL", "voices": ["V19"]}},
+    {"t": "01:45:00", "expect": {"state": "CAUTION", "reasons": ["FATIGUE"], "voices": ["V02", "V03"]}},
+    {"t": "01:45:20", "in": {"checkinText": "괜찮아"}},
+    {"t": "02:00:00", "expect": {"state": "STOP", "reasons": ["FATIGUE"], "voices": ["V04"]}},
+    {"t": "02:00:08", "in": {"promptText": ""}},
+    {"t": "02:05:00", "in": {"summary": {"glucoseMmol": 6.4, "source": "simulated", "trend": "FLAT"}}, "expect": {"state": "STOP", "reasons": ["FATIGUE"]}},
+    {"t": "02:10:00", "in": {"summary": {"glucoseMmol": 6.4, "source": "simulated", "trend": "FLAT"}}, "expect": {"state": "STOP", "reasons": ["FATIGUE"]}},
+    {"t": "02:10:08", "expect": {"state": "STOP", "reasons": ["FATIGUE"], "voices": ["V04"]}}
+  ]
+}

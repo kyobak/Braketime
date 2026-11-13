@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 10.3 알림 문구. 혈당 단어와 수치를 넣지 않는다(14장 표시 규칙) -->
+    <string name="channel_status">운전 시간 측정</string>
+    <string name="channel_critical">정차 권고</string>
+    <string name="notify_status_title">운전 시간을 재고 있어요</string>
+    <string name="notify_status_text">쉴 때가 되면 음성으로 알려 드려요</string>
+    <string name="notify_stop_title">쉬어 갈 시간이에요</string>
+    <string name="notify_stop_text">안전한 곳에 차를 세워 주세요</string>
+    <!-- V09H·V10H를 말하지 못했을 때. 나들목 램프나 요금소 앞에 바로 세우라는 말로 읽히지 않게 순서를 밝힌다(V-07) -->
+    <string name="notify_stop_text_highway">쉼터나 나들목으로 나간 뒤 안전한 곳에 세워 주세요</string>
+    <string name="notify_launch_title">앱을 열어 주세요</string>
+    <string name="notify_launch_text">앱을 열면 운전 시간을 이어서 재요</string>
+</resources>

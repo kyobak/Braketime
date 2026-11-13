@@ -1,0 +1,12 @@
+{
+  "id": "D2",
+  "title": "보류 중 출발",
+  "startLocal": "2026-11-20T09:00:00+09:00",
+  "keepGlucoseAlive": true,
+  "steps": [
+    {"t": "00:00:00", "in": {"ignition": "ON", "gear": "PARK", "speedKmh": 0, "summary": {"glucoseMmol": 3.8, "source": "simulated", "trend": "FLAT"}}, "expect": {"state": "RECOVER", "reasons": ["GLUCOSE"], "hold": true}},
+    {"t": "00:00:05", "expect": {"state": "RECOVER", "voices": ["V17"], "hold": true}},
+    {"t": "00:05:00", "in": {"gear": "DRIVE", "speedKmh": 40}, "expect": {"state": "STOP", "reasons": ["GLUCOSE"], "voices": ["V09"], "hold": false, "guidanceAuto": true}},
+    {"t": "00:07:00", "expect": {"state": "STOP", "reasons": ["GLUCOSE"], "voices": ["V10"]}}
+  ]
+}

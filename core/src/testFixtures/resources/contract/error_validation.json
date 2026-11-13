@@ -1,0 +1,9 @@
+{
+  "error": {
+    "code": "validation_failed",
+    "message": "요청 값을 확인해 주세요.",
+    "fields": [{ "field": "glucose_mmol", "rule": "range" }],
+    "request_id": "req_01JC8Z4T",
+    "server_time": "2026-11-19T23:12:05Z"
+  }
+}

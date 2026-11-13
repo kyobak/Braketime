@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Braketime</string>
+
+    <!-- 상태 배지 -->
+    <string name="badge_normal">여유</string>
+    <string name="badge_caution">주의</string>
+    <string name="badge_stop">정차 권고</string>
+    <string name="badge_recover">쉬는 중</string>
+
+    <!-- S1 -->
+    <string name="s1_next_rest">다음 휴식까지</string>
+    <string name="s1_listening">듣고 있어요</string>
+    <string name="s1_driving_for">%1$s째 운전 중</string>
+    <string name="s1_stop_safely">안전한 곳에 차를 세워 주세요</string>
+    <string name="s1_take_rest">쉬어 가세요</string>
+    <string name="s1_rest_left">남은 휴식</string>
+    <string name="s1_recovery_wait">회복 대기</string>
+    <string name="s1_simulated_data">시뮬레이션 데이터</string>
+    <string name="s1_measured_since_start">앱 시작 후 측정</string>
+    <string name="s1_next_place">다음 쉼터</string>
+    <string name="s1_link_lost">연결 끊김</string>
+    <string name="s1_checkin_reason">피곤하다고 하셨어요</string>
+    <string name="s1_no_signal">운전 시간을 잴 수 없어요</string>
+    <string name="s1_no_signal_value">음성 안내는 계속돼요</string>
+    <string name="s1_horizon_title">연속 운전</string>
+    <string name="km_approx">약 %1$s</string>
+    <string name="s1_route_left">목적지까지 %1$s</string>
+    <string name="now_mark">지금</string>
+    <string name="place_line">%1$s %2$s</string>
+    <string name="kind_rest_area">휴게소</string>
+    <string name="kind_drowsy_shelter">졸음쉼터</string>
+    <string name="kind_parking">주차장</string>
+    <string name="kind_convenience">편의점</string>
+
+    <!-- 탭 -->
+    <string name="tab_today">오늘</string>
+    <string name="tab_log">기록</string>
+    <string name="tab_settings">설정</string>
+
+    <!-- S2 -->
+    <string name="s2_title">오늘 컨디션</string>
+    <string name="s2_checkin">컨디션 응답</string>
+    <string name="s2_checkin_none">아직 안 물어봤어요</string>
+    <string name="s2_checkin_good">좋음</string>
+    <string name="s2_checkin_neutral">보통</string>
+    <string name="s2_checkin_tired">피곤함</string>
+    <string name="s2_checkin_silent">응답 없음</string>
+    <string name="s2_sleep">수면</string>
+    <string name="s2_sleep_short">기준보다 짧음</string>
+    <string name="s2_sleep_enough">기준 이상</string>
+    <string name="s2_advanced">안내 시점을 %1$d분 앞당겼어요</string>
+    <!-- U-29. 수면 값이 사라져도 앞당김은 15분 휴식이나 새 운행까지 남는다. 행만 사라지면 1:15가 왜 남았는지 알 수 없다 -->
+    <string name="s2_advance_kept">수면 값은 없지만 %1$d분 쉴 때까지 안내 시점을 %2$d분 앞당겨 둬요</string>
+    <!-- 쌓인 운전이 없으면 15분 휴식이 아니라 다음 시동에서 풀리므로 언제 풀리는지는 말하지 않는다 -->
+    <string name="s2_advance_kept_idle">수면 값은 없지만 앞서 받은 값으로 안내 시점을 %1$d분 앞당겨 뒀어요</string>
+    <string name="glucose">혈당</string>
+    <string name="glucose_hidden">컨디션</string>
+    <string name="glucose_unavailable_hidden">연결 끊김</string>
+    <string name="glucose_value">%1$d mg/dL (%2$s mmol/L)</string>
+    <string name="glucose_value_long">%1$d mg/dL (%2$s mmol/L), %3$s</string>
+    <string name="glucose_unavailable">혈당 정보 없음</string>
+    <string name="glucose_simulated">시뮬레이션 혈당</string>
+    <string name="glucose_simulated_banner">혈당 시뮬레이션</string>
+    <string name="trend_falling_fast">빠르게 내려가는 중</string>
+    <string name="trend_falling">내려가는 중</string>
+    <string name="trend_flat">변화 적음</string>
+    <string name="trend_rising">올라가는 중</string>
+    <string name="range_above">기준 위</string>
+    <string name="range_near">기준에 가까움</string>
+    <string name="range_below">기준 아래</string>
+    <string name="range_waiting">회복 대기</string>
+    <string name="hold_band">출발을 미루는 게 좋아요</string>
+    <!-- U-28. 2시간·15분은 사업용 화물차 규정을 참고만 했다. 1시간 45분은 이 앱이 정한 값이라 따로 적는다 -->
+    <string name="source_rest">2시간·15분 참고: 화물자동차 운수사업법 시행규칙</string>
+    <string name="source_caution">기본 주의 시점 %1$s: 설계값</string>
+    <string name="source_sleep">수면 기준: 설계값</string>
+    <string name="source_glucose">기준: Diabetes Canada 2018 (캐나다 지침)</string>
+    <string name="source_button">기준 출처</string>
+    <string name="s2_rules_title">안내 시점</string>
+    <string name="s2_rule_at">연속 운전 %1$s이면</string>
+    <string name="s2_rule_caution">주의</string>
+    <string name="s2_rule_stop">정차 권고</string>
+    <string name="s2_rule_reset">%1$d분 쉬면 운전 시간을 다시 세요</string>
+    <string name="s2_phone">연결된 폰</string>
+    <string name="measured_ago">측정 %1$d분 전</string>
+    <string name="measured_now">방금 측정</string>
+    <string name="received_ago">값 수신 %1$d분 전</string>
+    <string name="received_now">방금 값 수신</string>
+
+    <!-- S3 -->
+    <string name="s3_hint">시동을 켜 두면 다 쉬었을 때 알려 드려요</string>
+    <string name="s3_elapsed">%1$d분 지남</string>
+    <string name="s3_recovery_left">회복 후 %1$d분 중 남은 시간</string>
+    <string name="s3_recovery_line">회복 후 %1$d분 중 %2$s 남음</string>
+    <string name="s3_recovery_line_soon">회복 후 %1$d분이 곧 끝나요</string>
+    <string name="s3_wait_value">회복 기준 위로 오르면 %1$d분 뒤 알려 드릴게요</string>
+    <string name="s3_unavailable">혈당 정보 없음. 직접 확인하고 출발하세요</string>
+    <string name="s3_unavailable_hidden">연결 끊김. 직접 확인하고 출발하세요</string>
+    <string name="s3_trend_title">혈당 추이</string>
+    <string name="s3_trend_title_hidden">회복 대기</string>
+    <string name="graph_recover_line">회복 기준 %1$d mg/dL</string>
+    <string name="graph_stop_line">정차 권고 기준 %1$d mg/dL</string>
+    <string name="graph_range">최근 %1$d분</string>
+
+    <!-- S4 -->
+    <string name="s4_title">오늘의 기록</string>
+    <string name="s4_total_title">오늘의 합계</string>
+    <string name="s4_total_line">운전 %1$s, %2$d분 이상 휴식 %3$d회</string>
+    <string name="s4_drive_total">운전 %1$s</string>
+    <string name="s4_rest_total">%1$d분 이상 휴식 %2$d회</string>
+    <string name="s4_advised_total">휴식 안내 %1$d회</string>
+    <string name="s4_condition_total">컨디션 정차 %1$d회</string>
+    <string name="s4_distance">주행 %1$dkm</string>
+    <string name="s4_seg_drive">운전 %1$s</string>
+    <string name="s4_seg_rest">휴식 %1$s</string>
+    <!-- U-23: 15분 미만 정차. "휴식"은 15분을 채운 정차에만, "정차"는 권고 문구가 쓰고 있어 피한다 -->
+    <string name="s4_seg_pause">멈춤 %1$s</string>
+    <string name="s4_seg_pause_note">중간 멈춤 %1$s</string>
+    <string name="s4_seg_pauses_note">중간 멈춤 %1$d회, %2$s</string>
+    <string name="s4_empty">오늘 기록이 아직 없어요</string>
+    <string name="s4_gap">측정 안 된 구간 있음</string>
+    <string name="s4_recent_title">최근 7일</string>
+    <!-- U-24: 횟수는 운행 수다. "운전 2회"로 두면 옆 목록의 운전 행 수로 읽힌다. 시간은 값 안에 "운전"을 붙여 오늘 합계와 같은 말로 둔다 -->
+    <string name="s4_recent_drive">운행</string>
+    <string name="s4_recent_drive_value">%1$d회, 운전 %2$s</string>
+    <string name="s4_recent_advised">휴식 안내</string>
+    <string name="s4_recent_rested">%1$d분 이상 휴식</string>
+    <string name="s4_count">%1$d회</string>
+    <string name="s4_recent_empty">최근 7일 동안 운행 기록이 없어요</string>
+
+    <!-- S5 -->
+    <string name="s5_title">설정</string>
+    <string name="s5_back">목록으로</string>
+    <string name="s5_devices">연결된 기기</string>
+    <string name="s5_guardian">보호자 등록</string>
+    <string name="s5_search">외부 장소 검색</string>
+    <string name="s5_support">지원 현황</string>
+    <string name="s5_sources">기준과 출처</string>
+    <string name="s5_data">데이터와 동의</string>
+    <string name="s5_demo">시연 모드</string>
+    <string name="s5_server">서버 주소</string>
+    <string name="value_none">없음</string>
+    <string name="value_off">꺼짐</string>
+    <string name="value_registered">등록됨</string>
+    <string name="value_not_linked">서버 연결 안 됨</string>
+
+    <string name="pair_title">스마트폰 연결</string>
+    <string name="pair_hint">동반 앱으로 찍거나 코드를 입력하면 연결돼요</string>
+    <string name="pair_request">연결 코드 받기</string>
+    <string name="pair_linked">%1$s 연결됨</string>
+    <string name="pair_linked_offline">폰이 연결되어 있어요. 지금은 서버에 닿지 않아요</string>
+    <string name="pair_unlink">연결 해제</string>
+    <string name="pair_no_code">서버에 닿지 않아 코드를 받지 못했어요. 앱 안내는 계속 동작해요</string>
+
+    <string name="guardian_body">보호자 문자 알림은 운전자와 보호자 양쪽의 동의가 필요해요. 이 버전에는 아직 없어요</string>
+
+    <string name="search_body">쉼터는 앱에 든 목록만 찾아요. 위치를 밖으로 보내는 외부 지도 검색은 이 버전에는 아직 없어요</string>
+
+    <string name="support_vehicle">차종</string>
+    <string name="support_gear">기어</string>
+    <string name="support_speed">차속</string>
+    <string name="support_ignition">시동</string>
+    <string name="support_route">남은 경로 시간</string>
+    <string name="support_waypoint">경유지 추가</string>
+    <string name="support_voice">음성</string>
+    <string name="support_listen">음성 응답</string>
+    <string name="support_location">위치</string>
+    <string name="support_vent">공기 모드 제안</string>
+    <string name="support_seat">동승 인지</string>
+    <string name="support_screen">화면 정보</string>
+    <string name="support_line">%1$s: %2$s</string>
+    <string name="support_checking">확인 중이에요</string>
+    <string name="support_unsupported">이 차량에서 지원 안 됨</string>
+    <string name="support_supported">사용 중</string>
+    <string name="support_gear_off">이 차량에서 지원 안 됨. 차속 0이 15분 이어지면 쉰 것으로 봐요</string>
+    <string name="support_speed_off">쓸 수 없어요. 기어로 판단해요</string>
+    <string name="support_ignition_off">이 차량에서 지원 안 됨. 앱이 켜진 동안을 시동으로 봐요</string>
+    <string name="support_no_drive_signal">기어와 차속을 모두 읽지 못해 운전 시간을 세지 않아요. 체크인과 혈당 안내만 동작해요</string>
+    <string name="support_route_on">내비 경로가 있을 때</string>
+    <string name="support_route_off">내비를 쓸 수 없어 시간 기준으로만 안내해요</string>
+    <string name="support_voice_vehicle">차량 음성 엔진 사용 중</string>
+    <string name="support_voice_device">기기 음성 엔진 사용 중</string>
+    <string name="support_voice_off">음성을 낼 수 없어 알림과 화면으로 안내해요</string>
+    <string name="support_listen_vehicle">차량 음성 인식 사용 중</string>
+    <string name="support_listen_device">기기 음성 인식 사용 중</string>
+    <string name="support_listen_off">듣지 못해 일방 안내만 해요</string>
+    <string name="support_location_on">쉼터를 찾을 때 차량 위치 서비스 사용 중</string>
+    <string name="support_location_navi">차량 위치 서비스 값이 없어 내비 위치로 대신해요</string>
+    <string name="support_location_device">차량 위치 서비스 값이 없어 기기 위치로 대신해요</string>
+    <string name="support_location_off">위치를 몰라 장소 없이 안내해요</string>
+    <string name="support_seat_off">정보가 없어 혈당 수치를 숨겨요</string>
+    <string name="support_seat_unverified">좌석 값의 방향을 확인하기 전이라 혈당 수치를 숨겨요</string>
+    <string name="perm_request">허용 요청</string>
+    <string name="support_screen_value">밀도 %1$s, ydpi %2$s</string>
+    <string name="support_perm_label">%1$s 권한</string>
+    <string name="support_perm_denied">허용 안 됨</string>
+    <string name="support_drive_signal">운전 신호</string>
+
+    <string name="src_rest">2시간, 15분: 화물자동차 운수사업법 시행규칙 제21조·제22조(사업용 화물차는 2시간 연속 운전 뒤 15분 이상 휴게) 참고. 일반 운전자에게 법적 의무는 아니에요</string>
+    <string name="src_caution_time">기본 주의 시점 %1$s: 정차 권고 %2$d분 전에 미리 알리려고 정한 설계값</string>
+    <string name="src_glucose">%1$s, %2$s, %3$d분: Diabetes Canada 2018 21장 (캐나다 지침)</string>
+    <string name="src_sleep">수면 %1$d시간 미만이면 %2$d분 앞당김: 설계값</string>
+    <string name="src_poi">쉼터 목록: 한국도로공사, 공공데이터포털 표준데이터(졸음쉼터 2026-02-25, 휴게소 2026-09-17 기준). 운영 상태, 공사, 임시 폐쇄는 반영하지 않아요</string>
+    <string name="src_caution">혈당 주의: 빠르게 내려가면 %1$s 미만, 내려가면 %2$s 미만, 변화가 작으면 %3$s 미만. 설계값</string>
+
+    <string name="data_location">위치는 쉼터를 찾을 때 차 안에서만 쓰고 서버로 보내지 않아요</string>
+    <string name="data_health">수면과 혈당 동의는 폰 동반 앱에서 받아요. 연결을 해제하면 받은 값도 지워요</string>
+    <!-- U-31. 철회는 폰에서만 한다. 서버 API는 차량 토큰도 받지만 화면에는 두지 않는다 -->
+    <string name="data_withdraw">동의 철회는 폰 동반 앱의 데이터 탭에서 해요</string>
+    <string name="data_clear_trips">기록 지우기</string>
+    <string name="data_delete_server">서버 데이터 삭제</string>
+    <string name="data_trips_cleared">기록을 지웠어요</string>
+    <string name="data_unpaired">연결을 해제했어요</string>
+    <string name="data_server_deleted">서버 데이터를 지웠어요</string>
+    <string name="data_server_pending">아직 지우지 못했어요. 연결되면 마저 지울게요</string>
+    <string name="confirm_again">한 번 더 누르면 실행돼요</string>
+    <!-- U-30. 동승자가 볼 수 있어 "혈당" 대신 S2 끊김 표시와 같은 말을 쓴다.
+         래치가 없는 끊김에도 같은 문장을 쓰므로 상태와 무관한 사실과 누른 뒤의 결과만 적는다 -->
+    <string name="hold_body">컨디션 값이 끊겨 있어요. 풀면 새 값이 올 때까지 시간 기준으로만 안내해요. 직접 확인했을 때만 푸세요</string>
+    <string name="hold_release">끊김 보류 풀기</string>
+    <!-- D-33. 낮은 값 뒤에는 회복 대기(40분)를 사람이 건너뛰지 못한다 -->
+    <string name="hold_wait">마지막 값이 낮아 %1$s 뒤에 풀 수 있어요</string>
+    <string name="hold_sending">푸는 중이에요</string>
+    <string name="hold_failed">풀지 못했어요. 잠시 뒤 다시 해 주세요</string>
+    <string name="data_hold_released">끊김 보류를 풀었어요. 새 값이 오면 다시 판단해요</string>
+
+    <string name="demo_scenario_1">혈당 안내 시나리오</string>
+    <string name="demo_scenario_2">기기 없는 피로 관리 시나리오</string>
+    <string name="demo_scenario_3">수면 부족 시나리오</string>
+    <string name="demo_real_signals">실제 차량 신호 사용</string>
+    <string name="demo_running">시연이 돌고 있어요</string>
+    <string name="demo_stop">시연 끝내기</string>
+    <string name="demo_restart">처음부터 다시</string>
+    <string name="demo_send_place">이 장소를 실제 내비로 보내기</string>
+    <string name="demo_send_note">%1$s. 보내면 지도가 앱 화면을 덮고 경로가 남아요</string>
+    <string name="demo_send_offline">망이 없어 보내지 않았어요</string>
+    <string name="demo_body">시나리오는 시간을 압축해 돌아요. 판단은 실제 엔진이 해요</string>
+
+    <string name="server_body">https 주소, 또는 개발용 내부 주소만 받아요</string>
+    <string name="server_save">저장</string>
+    <string name="server_saved">저장했어요</string>
+    <string name="server_rejected">받을 수 없는 주소예요</string>
+
+    <!-- 온보딩 -->
+    <string name="o1_title">쉴 때를 음성으로 알려 드려요</string>
+    <string name="o1_rule">2시간 연속 운전하면 가까운 쉼터를 골라 드려요</string>
+    <string name="o1_start">시작</string>
+    <string name="onboarding_step">%1$d/%2$d</string>
+    <string name="o2_title">필요한 권한</string>
+    <string name="perm_speed">차량 속도</string>
+    <string name="perm_speed_why">운전 시간</string>
+    <string name="perm_location">위치</string>
+    <string name="perm_location_why">쉼터 찾기</string>
+    <string name="perm_mic">마이크</string>
+    <string name="perm_mic_why">음성 응답</string>
+    <string name="perm_notify">알림</string>
+    <string name="perm_notify_why">정차 권고</string>
+    <string name="o2_request">허용 요청</string>
+    <string name="o2_later">나중에</string>
+    <string name="o3_title">말해 보세요</string>
+    <string name="o3_listen">말해 보기</string>
+    <string name="o3_examples">좋아요, 피곤해요처럼 답해 보세요</string>
+    <string name="o3_mute_hint">자주 말하는 게 싫으면 그만이라고 하세요</string>
+    <string name="o3_listening">듣고 있어요</string>
+    <string name="o3_result">인식 결과: %1$s</string>
+    <string name="o3_no_result">알아듣지 못했어요. 그래도 괜찮아요</string>
+    <string name="o3_done">끝내기</string>
+    <string name="o3_skip">건너뛰기</string>
+    <string name="o3_off_title">음성 응답 없이 안내해요</string>
+    <string name="o3_off_body">마이크를 쓸 수 없어 묻지 않고 말로만 안내해요. 설정 > 지원 현황에서 허용할 수 있어요</string>
+
+    <string name="setup_waiting">주차 상태를 확인하고 있어요</string>
+</resources>
