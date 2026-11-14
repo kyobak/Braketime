@@ -114,7 +114,7 @@ adb -s <폰 에뮬레이터> install -r apk/hyunkyo_BraketimeCompanion_release.a
 | 차속, 기어, 시동 | CarPropertyManager | `CAR_SPEED`, `CAR_POWERTRAIN` | F1 | 차량 신호 시연 |
 | 주행 제한 | CarUxRestrictionsManager | | 화면 게이트 | 차량 신호 시연(D 기어) |
 
-실출시에는 `CONTROL_CAR_CLIMATE`에 App Market 승인이 필요하다. 공모전 APK에서 쓸 수 있는지 명시한 공식 문장을 찾지 못해 주최 측 문의 항목이다(결정 기록 "제출 전 사람이 정할 것" 19행).
+실출시에는 `CONTROL_CAR_CLIMATE`에 App Market 승인이 필요하다. 공모전 APK에서 쓸 수 있는지 명시한 공식 문장은 찾지 못했다. 주최 측에 따로 묻지 않고 알려진 한계로 둔다(결정 기록 J-08).
 
 ## 판단 규칙과 출처
 

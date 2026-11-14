@@ -2406,7 +2406,7 @@ PUT  /vehicle/hvac?...   PUT /vehicle/body?...   GET /vehicle/catalog
 - 생략: G≠NONE, AutoRecirculation 켜짐, capability에 WRITE 없음, onFailed. 묻기 전이면 사용자에게 오류를 보이지 않고 S5에 "이 차량에서 지원 안 됨". "응" 뒤에 값이 안 바뀌면(콘솔 하트비트가 꺼진 에뮬레이터에서 실측) V27F로 알리고 복원하지 않는다. "응"이라고 답한 운전자는 바뀐 줄 안다.
 - 시연은 매 호출의 결과를 자막 아래 줄에 적는다(8.3). 콘솔 기본값은 이미 바깥 공기라 V27이 나오지 않는다. 조건표는 README.
 - 금지: "졸음이 줄어요" 같은 효과 주장, 쉬는 대신이라는 표현, 혈당 안내 중 제안.
-- 권한 `CONTROL_CAR_CLIMATE`. 실출시에는 App Market 승인이 필요하다고 README에 적는다. 공모전 APK에서 쓸 수 있는지 명시한 공식 문장이 없어 주최 측 문의가 필요하다.
+- 권한 `CONTROL_CAR_CLIMATE`. 실출시에는 App Market 승인이 필요하다고 README에 적는다. 공모전 APK에서 쓸 수 있는지 명시한 공식 문장이 없다. 주최 측에 묻지 않고 알려진 한계로 둔다(J-08, 2026-11-14).
 - `VentilationController`에만 있다. 엔진은 효과만 낸다.
 
 | ID | 입력 | 기대 |

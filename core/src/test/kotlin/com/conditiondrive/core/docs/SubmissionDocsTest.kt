@@ -27,7 +27,8 @@ class SubmissionDocsTest {
         val numbers = Regex("""(?m)^\| (\d+) \|""").findAll(humanSection()).map { it.groupValues[1].toInt() }.toList()
         // 19는 2026-11-07에 더했다. 주최 측 문의(J-08)는 사람만 할 수 있는데 표 밖에 있어 잊힐 수 있었다
         // 1(서명)은 2026-11-13에 배포 키로 다시 빌드해 지웠다
-        assertEquals(listOf(12, 14, 15, 16, 17, 19), numbers)
+        // 19(문의)는 2026-11-14 사용자 결정으로 묻지 않기로 해 지웠다. 지운 행 기록에 CONTROL_CAR_CLIMATE가 남는다
+        assertEquals(listOf(12, 14, 15, 16, 17), numbers)
         for (word in listOf("서명", "접수양식", "동의서", "appdevchallenge@hyundai-partners.com", "2026-11-15", "GitHub", "`apk/`", "CONTROL_CAR_CLIMATE")) {
             assertTrue(word in humanSection(), word)
         }
